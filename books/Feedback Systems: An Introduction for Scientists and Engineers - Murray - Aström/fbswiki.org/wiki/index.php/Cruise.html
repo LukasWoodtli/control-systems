@@ -1,0 +1,3481 @@
+
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+
+<!-- Mirrored from fbswiki.org/wiki/index.php/Cruise.py by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Jun 2025 21:43:01 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>Cruise control - FBSwiki</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"f6134a21d0c072501222ddca","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Cruise_control","wgTitle":"Cruise control","wgCurRevisionId":1330,"wgRevisionId":1330,"wgArticleId":19,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Running examples"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Cruise_control","wgRelevantArticleId":19,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRedirectedFrom":"Cruise.py","wgPageFormsTargetName":null,
+"wgPageFormsAutocompleteValues":[],"wgPageFormsAutocompleteOnAllChars":!1,"wgPageFormsFieldProperties":[],"wgPageFormsCargoFields":[],"wgPageFormsDependentFields":[],"wgPageFormsCalendarValues":[],"wgPageFormsCalendarParams":[],"wgPageFormsCalendarHTML":null,"wgPageFormsGridValues":[],"wgPageFormsGridParams":[],"wgPageFormsContLangYes":null,"wgPageFormsContLangNo":null,"wgPageFormsContLangMonths":[],"wgPageFormsHeightForMinimizingInstances":800,"wgPageFormsShowOnSelect":[],"wgPageFormsScriptPath":"/wiki/extensions/PageForms","edgValues":null,"wgPageFormsEDSettings":null,"wgAmericanDates":!1,"wgInternalRedirectTargetUrl":"/wiki/index.php/Cruise_control"};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","ext.math.styles":"ready","skins.vector.styles.legacy":"ready","jquery.makeCollapsible.styles":"ready","mediawiki.toc.styles":"ready","ext.smw.style":"ready","ext.smw.tooltip.styles":"ready"};RLPAGEMODULES=[
+"mediawiki.action.view.redirect","ext.math.scripts","ext.smw.style","ext.smw.tooltips","smw.entityexaminer","site","mediawiki.page.startup","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.legacy.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="https://fbswiki.org/wiki/load.php?lang=en&amp;modules=ext.math.styles%7Cjquery.makeCollapsible.styles%7Cmediawiki.toc.styles%7Cskins.vector.styles.legacy&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="https://fbswiki.org/wiki/load.php?lang=en&amp;modules=ext.smw.style%7Cext.smw.tooltip.styles&amp;only=styles&amp;skin=vector"/>
+<script async="" src="https://fbswiki.org/wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<style>#mw-indicator-mw-helplink {display:none;}</style>
+<meta name="generator" content="MediaWiki 1.35.1"/>
+<link rel="alternate" type="application/rdf+xml" title="Cruise control" href="https://fbswiki.org/wiki/index.php?title=Special:ExportRDF/Cruise_control&amp;xmlmime=rdf"/>
+<link rel="shortcut icon" href="https://fbswiki.org/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://fbswiki.org/wiki/opensearch_desc.php" title="FBSwiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://fbswiki.org/wiki/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+<link rel="canonical" href="Cruise_control.html"/>
+<!--[if lt IE 9]><script src="/wiki/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Cruise_control rootpage-Cruise_control skin-vector action-view skin-vector-legacy">
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice" class="mw-body-content"></div>
+	<div class="mw-indicators mw-body-content">
+	<div id="mw-indicator-smw-entity-examiner" class="mw-indicator"><div class="smw-entity-examiner smw-indicator-vertical-bar-loader" data-subject="Cruise_control#0##" data-dir="ltr" data-uselang="" title="Running an examiner in the background"></div></div>
+	</div>
+	<h1 id="firstHeading" class="firstHeading" lang="en">Cruise control</h1>
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From FBSwiki</div>
+		<div id="contentSub"><span class="mw-redirectedfrom">(Redirected from <a href="https://fbswiki.org/wiki/index.php?title=Cruise.py&amp;redirect=no" class="mw-redirect" title="Cruise.py">Cruise.py</a>)</span></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><table style="float: right">
+
+<tbody><tr>
+<td><div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Introduction"><span class="tocnumber">1</span> <span class="toctext">Introduction</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Dynamic_model"><span class="tocnumber">2</span> <span class="toctext">Dynamic model</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="#Python_code"><span class="tocnumber">2.1</span> <span class="toctext">Python code</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Linearized_Dynamics"><span class="tocnumber">2.2</span> <span class="toctext">Linearized Dynamics</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Python_code_2"><span class="tocnumber">2.3</span> <span class="toctext">Python code</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#State_Space_Control"><span class="tocnumber">3</span> <span class="toctext">State Space Control</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#Python_code_3"><span class="tocnumber">3.1</span> <span class="toctext">Python code</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#PID_Control"><span class="tocnumber">4</span> <span class="toctext">PID Control</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="#Python_code_4"><span class="tocnumber">4.1</span> <span class="toctext">Python code</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Anti-windup_compensation"><span class="tocnumber">4.2</span> <span class="toctext">Anti-windup compensation</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Python_code_5"><span class="tocnumber">4.3</span> <span class="toctext">Python code</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-12"><a href="#Further_Reading"><span class="tocnumber">5</span> <span class="toctext">Further Reading</span></a></li>
+</ul>
+</div>
+
+</td></tr></tbody></table>
+<table class="wikitable">
+
+<tbody><tr>
+<th>GitHub URL
+</th>
+<td><a rel="nofollow" class="external free" href="https://github.com/murrayrm/fbs2e-python/blob/main/cruise.py">https://github.com/murrayrm/fbs2e-python/blob/main/cruise.py</a>
+</td></tr>
+<tr>
+<th>Requires
+</th>
+<td><a href="https://python-control.org/" class="extiw" title="https:python-control.org">python-control</a>
+</td></tr></tbody></table>
+<p>This page documents the cruise control system that is used as a running example throughout the text.  A detailed description of the dynamics of this system are presented in <a href="Examples.html" title="Examples">Chapter 4 - Examples</a>.  This page contains a description of the system, including the models and commands used to generate some of the plots in the text.
+</p><p>Note: the Python code on this page makes use of the <a rel="nofollow" class="external text" href="https://python-control.org/">Python Control Systems Library</a>, an open source software toolbox for control systems analysis.
+</p><p>Figures making use of this model:
+</p>
+<ul class="smw-format ul-format"><li class="smw-row"><span class="smw-field"><span class="smw-value"><a href="Figure_1.html" title="Figure 1.11: A feedback system for controlling the velocity of a vehicle">Figure 1.11: A feedback system for controlling the velocity of a vehicle</a></span></span></li></ul>
+<h2><span class="mw-headline" id="Introduction">Introduction</span></h2>
+<div class="floatright"><a href="File_Cruise-block.html" class="image" title="A feedback system for controlling the velocity of a vehicle. In the block diagram, the velocity of the vehicle is measured and compared to the desired velocity within the “Compute” block. Based on the difference in the actual and desired velocities, the throttle (or brake) is used to modify the force applied to the vehicle by the engine, drivetrain, and wheels."><img alt="A feedback system for controlling the velocity of a vehicle. In the block diagram, the velocity of the vehicle is measured and compared to the desired velocity within the “Compute” block. Based on the difference in the actual and desired velocities, the throttle (or brake) is used to modify the force applied to the vehicle by the engine, drivetrain, and wheels." src="https://fbswiki.org/wiki/images/thumb/0/0d/Cruise-block.png/300px-Cruise-block.png" decoding="async" width="300" height="145" class="thumbborder" srcset="/wiki/images/thumb/0/0d/Cruise-block.png/450px-Cruise-block.png 1.5x, /wiki/images/thumb/0/0d/Cruise-block.png/600px-Cruise-block.png 2x" /></a></div>
+<p>Cruise control is the term used to describe a control system that regulates the speed of an automobile.  Cruise control was commercially introduced in 1958 as an option on the Chrysler Imperial.  The basic operation of a cruise controller is to sense the speed of the vehicle, compare this speed to a desired reference, and then accelerate or decelerate the car as required.  The figure to the right shows a block diagram of this feedback system.
+</p>
+<div class="floatright"><a href="File_Cruise-speedresp.html" class="image" title="Response to a disturbance. The car travels on a horizontal road and the slope of the road changes to a constant uphill slope. The three different curves correspond to differing masses of the vehicle, between 1200 and 2000 kg, demonstrating that feedback can indeed compensate for the changing slope and that the closed loop system is robust to a large change in the vehicle characteristics."><img alt="Response to a disturbance. The car travels on a horizontal road and the slope of the road changes to a constant uphill slope. The three different curves correspond to differing masses of the vehicle, between 1200 and 2000 kg, demonstrating that feedback can indeed compensate for the changing slope and that the closed loop system is robust to a large change in the vehicle characteristics." src="https://fbswiki.org/wiki/images/thumb/5/55/Cruise-speedresp.png/300px-Cruise-speedresp.png" decoding="async" width="300" height="219" class="thumbborder" srcset="/wiki/images/5/55/Cruise-speedresp.png 1.5x" /></a></div>
+<p>A simple control algorithm for controlling the speed is to use a "proportional plus integral" feedback.  In this algorithm, we choose the amount of gas flowing to the engine based  on both the error between the current and desired speed, and the integral of that error.  The plot on the right shows the results of this feedback for a step change in the desired speed and a variety of different masses for the car (which might result from having a different number of passengers or towing a trailer).  Notice that independent of the mass (which varies by 25% of the total weight of the car), the steady state speed of the vehicle always approaches the desired speed and achieves that speed within approximately 10-15 seconds.  Thus the performance of the system is robust with respect to this uncertainty.
+</p>
+<h2><span class="mw-headline" id="Dynamic_model">Dynamic model</span></h2>
+<p>To develop a mathematical model we start with a force balance for the car body. Let <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle v}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>v</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle v}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/e07b00e7fc0847fbd16391c778d65bc25c452597" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.128ex; height:1.676ex;" alt="{\displaystyle v}"/></span> be the speed of the car, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle m}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>m</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle m}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/0a07d98bb302f3856cbabc47b2b9016692e3f7bc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.04ex; height:1.676ex;" alt="{\displaystyle m}"/></span> the total mass (including passengers), <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle F}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>F</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle F}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/545fd099af8541605f7ee55f08225526be88ce57" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.741ex; height:2.176ex;" alt="{\displaystyle F}"/></span> the force generated by the contact of the wheels with the road, and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle F_{\text{d}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>F</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>d</mtext>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle F_{\text{d}}}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/73ea1192fa1542cd21644b03df3da97a624de6e9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.641ex; height:2.509ex;" alt="{\displaystyle F_{\text{d}}}"/></span> the disturbance force due to gravity, friction and aerodynamic drag. The equation of motion of the car is simply 
+</p>
+<center><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle m{\frac {dv}{dt}}=F-F_{\text{d}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>m</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>d</mi>
+              <mi>v</mi>
+            </mrow>
+            <mrow>
+              <mi>d</mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mi>F</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>F</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>d</mtext>
+          </mrow>
+        </msub>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle m{\frac {dv}{dt}}=F-F_{\text{d}}.}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/eff995b922d0cbc30819cbd4ebd113edbd7a0fdd" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:16.187ex; height:5.509ex;" alt="{\displaystyle m{\frac {dv}{dt}}=F-F_{\text{d}}.}"/></span></center>
+<p>The force <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle F}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>F</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle F}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/545fd099af8541605f7ee55f08225526be88ce57" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.741ex; height:2.176ex;" alt="{\displaystyle F}"/></span> is generated by the engine, whose torque is proportional to the rate of fuel injection, which is itself proportional to a control signal <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle 0\leq u\leq 1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>0</mn>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mi>u</mi>
+        <mo>&#x2264;<!-- ≤ --></mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 0\leq u\leq 1}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/5157112f7017bf97e436cd6c975a0b1accd70417" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.505ex; width:9.852ex; height:2.343ex;" alt="{\displaystyle 0\leq u\leq 1}"/></span> that controls the throttle position. The torque also depends on engine speed <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \omega }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03C9;<!-- ω --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \omega }</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/48eff443f9de7a985bb94ca3bde20813ea737be8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.446ex; height:1.676ex;" alt="{\displaystyle \omega }"/></span>. A simple representation of the torque at full throttle is given by the torque curve 
+</p>
+<center><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle T(\omega )=T_{\text{m}}\left(1-\beta {\biggl (}{\frac {\omega }{\omega _{\text{m}}}}-1{\biggr )}^{2}\right),}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>T</mi>
+        <mo stretchy="false">(</mo>
+        <mi>&#x03C9;<!-- ω --></mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <msub>
+          <mi>T</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>m</mtext>
+          </mrow>
+        </msub>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mn>1</mn>
+            <mo>&#x2212;<!-- − --></mo>
+            <mi>&#x03B2;<!-- β --></mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mrow class="MJX-TeXAtom-OPEN">
+                <mo maxsize="2.047em" minsize="2.047em">(</mo>
+              </mrow>
+            </mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <mi>&#x03C9;<!-- ω --></mi>
+                <msub>
+                  <mi>&#x03C9;<!-- ω --></mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>m</mtext>
+                  </mrow>
+                </msub>
+              </mfrac>
+            </mrow>
+            <mo>&#x2212;<!-- − --></mo>
+            <mn>1</mn>
+            <msup>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mrow class="MJX-TeXAtom-CLOSE">
+                  <mo maxsize="2.047em" minsize="2.047em">)</mo>
+                </mrow>
+              </mrow>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msup>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle T(\omega )=T_{\text{m}}\left(1-\beta {\biggl (}{\frac {\omega }{\omega _{\text{m}}}}-1{\biggr )}^{2}\right),}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/887e71a3222be8bd9e2c478364cdf5d480849db6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.171ex; width:33.747ex; height:7.509ex;" alt="{\displaystyle T(\omega )=T_{\text{m}}\left(1-\beta {\biggl (}{\frac {\omega }{\omega _{\text{m}}}}-1{\biggr )}^{2}\right),}"/></span></center>
+<p>where the maximum torque <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle T_{\text{m}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>T</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>m</mtext>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle T_{\text{m}}}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/ec5e24395517d85782d6d98612875ee34553e136" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.959ex; height:2.509ex;" alt="{\displaystyle T_{\text{m}}}"/></span> is obtained at engine speed <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \omega _{\text{m}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>&#x03C9;<!-- ω --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>m</mtext>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \omega _{\text{m}}}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/f7ca97b20f4193ba7c251c2ec370ee47ab16e468" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:3.047ex; height:2.009ex;" alt="{\displaystyle \omega _{\text{m}}}"/></span>.  Typical parameters are <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle T_{m}=190}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>T</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>190</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle T_{m}=190}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/fb27f6bf479f30b3e4adee38f80749068a1f3e57" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:9.618ex; height:2.509ex;" alt="{\displaystyle T_{m}=190}"/></span> Nm, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \omega _{m}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>&#x03C9;<!-- ω --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>m</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \omega _{m}}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/238a329c04974a4de95ddcfc91409a2269aca64c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:3.121ex; height:2.009ex;" alt="{\displaystyle \omega _{m}}"/></span> = 420 rad/s (about 4000 RPM) and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \beta =0.4}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03B2;<!-- β --></mi>
+        <mo>=</mo>
+        <mn>0.4</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \beta =0.4}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/f519bd3da5db72bd317e38c8d10bd8b362fc30af" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:7.402ex; height:2.509ex;" alt="{\displaystyle \beta =0.4}"/></span>.
+</p><p>Let <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="{\displaystyle n}"/></span> be the gear ratio and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle r}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>r</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle r}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/0d1ecb613aa2984f0576f70f86650b7c2a132538" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.049ex; height:1.676ex;" alt="{\displaystyle r}"/></span> the wheel radius. The engine speed is related to the velocity through the expression
+</p>
+<center><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \omega ={\frac {n}{r}}v=:\alpha _{n}v,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03C9;<!-- ω --></mi>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>n</mi>
+            <mi>r</mi>
+          </mfrac>
+        </mrow>
+        <mi>v</mi>
+        <mo>=:</mo>
+        <msub>
+          <mi>&#x03B1;<!-- α --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mi>v</mi>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \omega ={\frac {n}{r}}v=:\alpha _{n}v,}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/5d1667058d255e7336cfa8af74effeaa589f2145" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:16.129ex; height:4.676ex;" alt="{\displaystyle \omega ={\frac {n}{r}}v=:\alpha _{n}v,}"/></span></center>
+<p>and the driving force can be written as
+</p>
+<center><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle F={\frac {nu}{r}}T(\omega )=\alpha _{n}uT(\alpha _{n}v).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>F</mi>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>n</mi>
+              <mi>u</mi>
+            </mrow>
+            <mi>r</mi>
+          </mfrac>
+        </mrow>
+        <mi>T</mi>
+        <mo stretchy="false">(</mo>
+        <mi>&#x03C9;<!-- ω --></mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <msub>
+          <mi>&#x03B1;<!-- α --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mi>u</mi>
+        <mi>T</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>&#x03B1;<!-- α --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mi>v</mi>
+        <mo stretchy="false">)</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle F={\frac {nu}{r}}T(\omega )=\alpha _{n}uT(\alpha _{n}v).}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/6078a721932c447b976d0723bb8015de568a5487" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:28.351ex; height:4.676ex;" alt="{\displaystyle F={\frac {nu}{r}}T(\omega )=\alpha _{n}uT(\alpha _{n}v).}"/></span></center>
+<div class="floatright"><a href="File_Cruise-gearcurves.html" class="image" title="Torque curves for typical car engine. The graph on the left shows the torque generated by the engine as a function of the angular velocity of the engine, while the curve on the right shows torque as a function of car speed for different gears."><img alt="Torque curves for typical car engine. The graph on the left shows the torque generated by the engine as a function of the angular velocity of the engine, while the curve on the right shows torque as a function of car speed for different gears." src="https://fbswiki.org/wiki/images/thumb/1/11/Cruise-gearcurves.png/400px-Cruise-gearcurves.png" decoding="async" width="400" height="181" class="thumbborder" srcset="/wiki/images/thumb/1/11/Cruise-gearcurves.png/600px-Cruise-gearcurves.png 1.5x, /wiki/images/1/11/Cruise-gearcurves.png 2x" /></a></div>
+<p>Typical values of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \alpha _{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>&#x03B1;<!-- α --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \alpha _{n}}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/b87bc96d36d1f4d3c81e942c864b212b2ab50b45" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.706ex; height:2.009ex;" alt="{\displaystyle \alpha _{n}}"/></span> for gears 1 through 5 are <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \alpha _{1}=40}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>&#x03B1;<!-- α --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>40</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \alpha _{1}=40}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/5086933a1db7eceba5aeadbccecbd82070cc905c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:7.965ex; height:2.509ex;" alt="{\displaystyle \alpha _{1}=40}"/></span>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \alpha _{2}=25}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>&#x03B1;<!-- α --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>25</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \alpha _{2}=25}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/e01fa482c281e31f5465b2c671c8db9d0b4cf0b9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:7.965ex; height:2.509ex;" alt="{\displaystyle \alpha _{2}=25}"/></span>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \alpha _{3}=16}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>&#x03B1;<!-- α --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>16</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \alpha _{3}=16}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/db39c5dd03d2d806fff811a1829808c648eaed59" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:7.965ex; height:2.509ex;" alt="{\displaystyle \alpha _{3}=16}"/></span>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \alpha _{4}=12}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>&#x03B1;<!-- α --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>12</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \alpha _{4}=12}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/cff29bd73232bb1a77472133cd864a02fefdba2a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:7.965ex; height:2.509ex;" alt="{\displaystyle \alpha _{4}=12}"/></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \alpha _{5}=10}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>&#x03B1;<!-- α --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>5</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>10</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \alpha _{5}=10}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/dc4d3ab58402bcc5eda52f99deecf0a74fbc01ee" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:7.965ex; height:2.509ex;" alt="{\displaystyle \alpha _{5}=10}"/></span>. The inverse of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \alpha _{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>&#x03B1;<!-- α --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \alpha _{n}}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/b87bc96d36d1f4d3c81e942c864b212b2ab50b45" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.706ex; height:2.009ex;" alt="{\displaystyle \alpha _{n}}"/></span> has a physical interpretation as the effective wheel radius.  The figure to the right shows the torque as a function of vehicle speed. The figure shows that the effect of the gear is to "flatten" the torque curve so that an almost full torque can be obtained almost over the whole speed range.
+</p><p>The disturbance force <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle F_{\text{d}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>F</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>d</mtext>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle F_{\text{d}}}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/73ea1192fa1542cd21644b03df3da97a624de6e9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.641ex; height:2.509ex;" alt="{\displaystyle F_{\text{d}}}"/></span> has three major components: <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle F_{\text{g}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>F</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>g</mtext>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle F_{\text{g}}}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/a4f6288967bf99f1af9b3b339eba81e45ae84613" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:2.549ex; height:2.843ex;" alt="{\displaystyle F_{\text{g}}}"/></span>, the forces due to gravity; <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle F_{\text{r}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>F</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>r</mtext>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle F_{\text{r}}}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/5095058d9ad2283fddee14a05648a80fe36aaa3b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.371ex; height:2.509ex;" alt="{\displaystyle F_{\text{r}}}"/></span>, the forces due to rolling friction; and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle F_{\text{a}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>F</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>a</mtext>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle F_{\text{a}}}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/20a5f752a1f32c36cff9161b91f2915ef8155d24" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.549ex; height:2.509ex;" alt="{\displaystyle F_{\text{a}}}"/></span>, the aerodynamic drag.  Letting the slope of the
+road be <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \theta }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03B8;<!-- θ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \theta }</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/6e5ab2664b422d53eb0c7df3b87e1360d75ad9af" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.09ex; height:2.176ex;" alt="{\displaystyle \theta }"/></span>, gravity gives the force <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle F_{\text{g}}=mg\sin \theta }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>F</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>g</mtext>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mi>m</mi>
+        <mi>g</mi>
+        <mi>sin</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mi>&#x03B8;<!-- θ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle F_{\text{g}}=mg\sin \theta }</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/76a42958cf9d9c3d47a56eaf2a244d4cfdd07296" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:13.524ex; height:2.843ex;" alt="{\displaystyle F_{\text{g}}=mg\sin \theta }"/></span>, where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle g=9.8\,{\text{m}}/{\text{s}}^{2}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>g</mi>
+        <mo>=</mo>
+        <mn>9.8</mn>
+        <mspace width="thinmathspace" />
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtext>m</mtext>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>s</mtext>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle g=9.8\,{\text{m}}/{\text{s}}^{2}}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/eae0b0a87075df566c0e0e4f8c7acc61a6f0cad4" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:12.642ex; height:3.176ex;" alt="{\displaystyle g=9.8\,{\text{m}}/{\text{s}}^{2}}"/></span> is the gravitational constant.  A simple model of rolling friction is
+</p>
+<center><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle F_{\text{r}}=mgC_{\text{r}}\,{\text{sgn}}(v),}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>F</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>r</mtext>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mi>m</mi>
+        <mi>g</mi>
+        <msub>
+          <mi>C</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>r</mtext>
+          </mrow>
+        </msub>
+        <mspace width="thinmathspace" />
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtext>sgn</mtext>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <mi>v</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle F_{\text{r}}=mgC_{\text{r}}\,{\text{sgn}}(v),}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/c6a66f84d85793564a785b35df5c5c24f44c1428" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:18.507ex; height:2.843ex;" alt="{\displaystyle F_{\text{r}}=mgC_{\text{r}}\,{\text{sgn}}(v),}"/></span></center>
+<p>where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle C_{\text{r}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>C</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>r</mtext>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle C_{\text{r}}}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/390ec636a7e8ba30545bc42e39a9e7769d0bd427" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.539ex; height:2.509ex;" alt="{\displaystyle C_{\text{r}}}"/></span> is the coefficient of rolling friction and sgn(<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle v}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>v</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle v}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/e07b00e7fc0847fbd16391c778d65bc25c452597" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.128ex; height:1.676ex;" alt="{\displaystyle v}"/></span>) is the sign of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle v}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>v</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle v}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/e07b00e7fc0847fbd16391c778d65bc25c452597" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.128ex; height:1.676ex;" alt="{\displaystyle v}"/></span> or zero if <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle v=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>v</mi>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle v=0}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/ba3d414a23bf4ecfa36cdd039241efc60a5bd9e0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.389ex; height:2.176ex;" alt="{\displaystyle v=0}"/></span>.  A typical value for the coefficient of rolling friction is <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle C_{\text{r}}=0.01}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>C</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>r</mtext>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>0.01</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle C_{\text{r}}=0.01}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/fb6bc57e9d980b79cb6af155014d72c6dcd44aee" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:9.771ex; height:2.509ex;" alt="{\displaystyle C_{\text{r}}=0.01}"/></span>.  Finally, the aerodynamic drag is proportional to the square of the speed:
+</p>
+<center><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle F_{\text{a}}={\frac {1}{2}}\rho C_{\text{d}}Av^{2},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>F</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>a</mtext>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mn>2</mn>
+          </mfrac>
+        </mrow>
+        <mi>&#x03C1;<!-- ρ --></mi>
+        <msub>
+          <mi>C</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>d</mtext>
+          </mrow>
+        </msub>
+        <mi>A</mi>
+        <msup>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle F_{\text{a}}={\frac {1}{2}}\rho C_{\text{d}}Av^{2},}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/5496a1a22acf5457d77e6ecd5122a552f223d1dc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:16.228ex; height:5.176ex;" alt="{\displaystyle F_{\text{a}}={\frac {1}{2}}\rho C_{\text{d}}Av^{2},}"/></span></center>
+<p>where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \rho }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03C1;<!-- ρ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \rho }</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/1f7d439671d1289b6a816e6af7a304be40608d64" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:1.202ex; height:2.176ex;" alt="{\displaystyle \rho }"/></span> is the density of air, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle C_{d}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>C</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>d</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle C_{d}}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/d638b409d293db1874a1503bd0f87d20b3d57ed7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.754ex; height:2.509ex;" alt="{\displaystyle C_{d}}"/></span> is the shape-dependent aerodynamic drag coefficient and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle A}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/7daff47fa58cdfd29dc333def748ff5fa4c923e3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.743ex; height:2.176ex;" alt="{\displaystyle A}"/></span> is the frontal area of the car.  Typical parameters are <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \rho =}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03C1;<!-- ρ --></mi>
+        <mo>=</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \rho =}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/a632661a8192ce33dd1c51f478526ca99868208b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:3.655ex; height:2.176ex;" alt="{\displaystyle \rho =}"/></span> 1.3 k/m<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {}^{3}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>3</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {}^{3}}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/2674b41dd8682789f2c17fb1d2e845d3acb793c5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.171ex; width:1.054ex; height:2.509ex;" alt="{\displaystyle {}^{3}}"/></span>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle C_{\text{d}}=0.32}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>C</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>d</mtext>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>0.32</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle C_{\text{d}}=0.32}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/c1f221808a06dd52dde930f8162aeed194749fb5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:10.041ex; height:2.509ex;" alt="{\displaystyle C_{\text{d}}=0.32}"/></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle A=}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+        <mo>=</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A=}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/8af9c8f62b6dd59911491b509a8705bc862c4429" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:4.196ex; height:2.176ex;" alt="{\displaystyle A=}"/></span> 2.4 m<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {}^{2}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mrow class="MJX-TeXAtom-ORD">
+
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {}^{2}}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/25d19a0bee8c4bfc83c25449369b10341886e6c5" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.171ex; width:1.054ex; height:2.509ex;" alt="{\displaystyle {}^{2}}"/></span>.
+</p>
+<h3><span class="mw-headline" id="Python_code">Python code</span></h3>
+<p>The model for the system above can be built using the <a href="https://python-control.org/" class="extiw" title="https:python-control.org">Python Control Toolbox</a>.  The code blocks in this section can be used to generate the plots above.  The vehicle dynamics and PI controller are defined in <a href="https://github.com/murrayrm/fbs2e-python/blob/main/cruise.py" class="extiw" title="https:github.com/murrayrm/fbs2e-python/blob/main/cruise.py">cruise.py</a> (via GitHub).
+</p>
+<div class="toccolours mw-collapsible mw-collapsed">
+<div>Package initialization</div>
+<div class="mw-collapsible-content"><pre>import numpy as np
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+from math import pi
+import control as ct
+</pre></div></div>
+<div class="toccolours mw-collapsible mw-collapsed">
+<div>Vehicle model</div>
+<div class="mw-collapsible-content"><pre>def vehicle_update(t, x, u, params={}):
+    """Vehicle dynamics for cruise control system.
+
+    Parameters
+    ----------
+    x&#160;: array
+         System state: car velocity in m/s
+    u&#160;: array
+         System input: [throttle, gear, road_slope], where throttle is
+         a float between 0 and 1, gear is an integer between 1 and 5,
+         and road_slope is in rad.
+
+    Returns
+    -------
+    float
+        Vehicle acceleration
+    """
+
+    from math import copysign, sin
+    sign = lambda x: copysign(1, x)         # define the sign() function
+    
+    # Set up the system parameters
+    m = params.get('m', 1600.)              # vehicle mass, kg
+    g = params.get('g', 9.8)                # gravitational constant, m/s^2
+    Cr = params.get('Cr', 0.01)             # coefficient of rolling friction
+    Cd = params.get('Cd', 0.32)             # drag coefficient
+    rho = params.get('rho', 1.3)            # density of air, kg/m^3
+    A = params.get('A', 2.4)                # car area, m^2
+    alpha = params.get(
+        'alpha', [40, 25, 16, 12, 10])      # gear ratio / wheel radius
+
+    # Define variables for vehicle state and inputs
+    v = x[0]                           # vehicle velocity
+    throttle = np.clip(u[0], 0, 1)     # vehicle throttle
+    gear = u[1]                        # vehicle gear
+    theta = u[2]                       # road slope
+
+    # Force generated by the engine
+    omega = alpha[int(gear)-1] * v      # engine angular speed
+    F = alpha[int(gear)-1] * motor_torque(omega, params) * throttle
+
+    # Disturbance forces
+    #
+    # The disturbance force Fd has three major components: Fg, the forces due
+    # to gravity; Fr, the forces due to rolling friction; and Fa, the
+    # aerodynamic drag.
+
+    # Letting the slope of the road be \theta (theta), gravity gives the
+    # force Fg = m g sin \theta.
+    Fg = m * g * sin(theta)
+
+    # A simple model of rolling friction is Fr = m g Cr sgn(v), where Cr is
+    # the coefficient of rolling friction and sgn(v) is the sign of v (±1) or
+    # zero if v = 0.
+    Fr  = m * g * Cr * sign(v)
+
+    # The aerodynamic drag is proportional to the square of the speed: Fa =
+    # 1/2 \rho Cd A |v| v, where \rho is the density of air, Cd is the
+    # shape-dependent aerodynamic drag coefficient, and A is the frontal area
+    # of the car.
+    Fa = 1/2 * rho * Cd * A * abs(v) * v
+    
+    # Final acceleration on the car
+    Fd = Fg + Fr + Fa
+    dv = (F - Fd) / m
+    
+    return dv
+</pre></div></div>
+<div class="toccolours mw-collapsible mw-collapsed">
+<div>Engine model</div>
+<div class="mw-collapsible-content"><pre>def motor_torque(omega, params={}):
+    # Set up the system parameters
+    Tm = params.get('Tm', 190.)             # engine torque constant
+    omega_m = params.get('omega_m', 420.)   # peak engine angular speed
+    beta = params.get('beta', 0.4)          # peak engine rolloff
+
+    return np.clip(Tm * (1 - beta * (omega/omega_m - 1)**2), 0, None)
+</pre></div></div>
+<div class="toccolours mw-collapsible mw-collapsed">
+<div>Input/output model for the vehicle system</div>
+<div class="mw-collapsible-content"><pre>vehicle = ct.NonlinearIOSystem(
+    vehicle_update, None, name='vehicle',
+    inputs = ('u', 'gear', 'theta'), outputs = ('v'), states=('v'))
+</pre></div></div>
+<div class="toccolours mw-collapsible mw-collapsed">
+<div>Input/output torque curves (plot)</div>
+<div class="mw-collapsible-content"><pre># Figure 4.2a - single torque curve as function of omega
+omega_range = np.linspace(0, 700, 701)
+plt.subplot(2, 2, 1)
+plt.plot(omega_range, [motor_torque(w) for w in omega_range])
+plt.xlabel('Angular velocity $\omega$ [rad/s]')
+plt.ylabel('Torque $T$ [Nm]')
+plt.grid(True, linestyle='dotted')
+
+# Figure 4.2b - torque curves in different gears, as function of velocity
+plt.subplot(2, 2, 2)
+v_range = np.linspace(0, 70, 71)
+alpha = [40, 25, 16, 12, 10]
+for gear in range(5):
+    omega_range = alpha[gear] * v_range
+    plt.plot(v_range, [motor_torque(w) for w in omega_range],
+             color='blue', linestyle='solid')
+
+# Set up the axes and style
+plt.axis([0, 70, 100, 200])
+plt.grid(True, linestyle='dotted')
+
+# Add labels
+plt.text(11.5, 120, '$n$=1')
+plt.text(24, 120, '$n$=2')
+plt.text(42.5, 120, '$n$=3')
+plt.text(58.5, 120, '$n$=4')
+plt.text(58.5, 185, '$n$=5')
+plt.xlabel('Velocity $v$ [m/s]')
+plt.ylabel('Torque $T$ [Nm]')
+
+plt.suptitle('Torque curves for typical car engine');
+plt.tight_layout()
+plt.savefig("cruise-gearcurves.png", bbox_inches='tight')
+</pre></div></div>
+<div class="toccolours mw-collapsible mw-collapsed">
+<div>PI controller</div>
+<div class="mw-collapsible-content"><pre># Construct a PI controller with rolloff, as a transfer function
+Kp = 0.5                        # proportional gain
+Ki = 0.1                        # integral gain
+control_pi = ct.tf2io(
+    ct.TransferFunction([Kp, Ki], [1, 0.01*Ki/Kp]),
+    name='control', inputs='u', outputs='y')
+
+cruise_pi = ct.InterconnectedSystem(
+    (vehicle, control_pi), name='cruise',
+    connections = [('control.u', '-vehicle.v'), ('vehicle.u', 'control.y')],
+    inplist = ('control.u', 'vehicle.gear', 'vehicle.theta'), inputs = ('vref', 'gear', 'theta'),
+    outlist = ('vehicle.v', 'vehicle.u'), outputs = ('v', 'u'))
+</pre></div></div> 
+<div class="toccolours mw-collapsible mw-collapsed">
+<div>Plotting function</div>
+<div class="mw-collapsible-content"><pre># Define a generator for creating a "standard" cruise control plot
+def cruise_plot(sys, t, y, t_hill=5, vref=20, antiwindup=False, linetype='b-',
+               subplots=[None, None]):
+    # Figure out the plot bounds and indices
+    v_min = vref-1.2; v_max = vref+0.5; v_ind = sys.find_output('v')
+    u_min = 0; u_max = 2 if antiwindup else 1; u_ind = sys.find_output('u')
+
+    # Make sure the upper and lower bounds on v are OK
+    while max(y[v_ind]) &gt; v_max: v_max += 1
+    while min(y[v_ind]) &lt; v_min: v_min -= 1
+        
+    # Create arrays for return values
+    subplot_axes = subplots.copy()
+
+    # Velocity profile
+    if subplot_axes[0] is None:
+        subplot_axes[0] = plt.subplot(2, 1, 1)
+    else:
+        plt.sca(subplots[0])
+    plt.plot(t, y[v_ind], linetype)
+    plt.plot(t, vref*np.ones(t.shape), 'k-')
+    plt.plot([t_hill, t_hill], [v_min, v_max], 'k--')
+    plt.axis([0, t[-1], v_min, v_max])
+    plt.xlabel('Time $t$ [s]')
+    plt.ylabel('Velocity $v$ [m/s]')
+
+    # Commanded input profile
+    if subplot_axes[1] is None:
+        subplot_axes[1] = plt.subplot(2, 1, 2)
+    else:
+        plt.sca(subplots[1])
+    plt.plot(t, y[u_ind], 'r--' if antiwindup else linetype)
+    plt.plot([t_hill, t_hill], [u_min, u_max], 'k--')
+    plt.axis([0, t[-1], u_min, u_max])
+    plt.xlabel('Time $t$ [s]')
+    plt.ylabel('Throttle $u$')
+
+    # Applied input profile
+    if antiwindup:
+        plt.plot(t, np.clip(y[u_ind], 0, 1), linetype)
+        plt.legend(['Commanded', 'Applied'], frameon=False)
+        
+    return subplot_axes
+</pre></div></div>
+<div class="toccolours mw-collapsible mw-collapsed">
+<div>Trajectory description</div>
+<div class="mw-collapsible-content"><pre># Define the time and input vectors
+T = np.linspace(0, 25, 101)
+vref = 20 * np.ones(T.shape)
+gear = 4 * np.ones(T.shape)
+theta0 = np.zeros(T.shape)
+
+# Effect of a hill at t = 5 seconds
+theta_hill = np.array([
+    0 if t &lt;= 5 else
+    4./180. * pi * (t-5) if t &lt;= 6 else
+    4./180. * pi for t in T])
+</pre></div></div>
+<div class="toccolours mw-collapsible mw-collapsed">
+<div>Simulated responses (plot)</div>
+<div class="mw-collapsible-content"><pre># Simulate and plot
+plt.figure()
+plt.suptitle('Response to change in road slope')
+
+subplots = [None, None]
+linecolor = ['red', 'blue', 'green']
+handles = []
+for i, m in enumerate([1200, 1600, 2000]):
+    # Compute the equilibrium state for the system
+    X0, U0 = ct.find_eqpt(
+        cruise_pi, [vref[0], 0], [vref[0], gear[0], theta0[0]], 
+        iu=[1, 2], y0=[vref[0], 0], iy=[0], params={'m':m})
+
+    t, y = ct.input_output_response(
+        cruise_pi, T, [vref, gear, theta_hill], X0, params={'m':m})
+
+    subplots = cruise_plot(cruise_pi, t, y, t_hill=5, subplots=subplots,
+                           linetype=linecolor[i][0] + '-')
+    handles.append(mpl.lines.Line2D([], [], color=linecolor[i], 
+                   linestyle='-', label="m = %d"&#160;% m))
+
+# Add labels to the plots
+plt.sca(subplots[0])
+plt.ylabel('Speed [m/s]')
+plt.legend(handles=handles, frameon=False, loc='lower right');
+
+plt.sca(subplots[1])
+plt.ylabel('Throttle')
+plt.xlabel('Time [s]');
+plt.savefig("cruise-speedresp.png", bbox_inches='tight')
+</pre></div></div>
+<h3><span class="mw-headline" id="Linearized_Dynamics">Linearized Dynamics</span></h3>
+<p>To explore the behavior of the cruise control system near the equilibrium point we
+will linearize the system. A Taylor series expansion of
+the dynamics around the equilibrium point gives
+</p>
+<center><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {d(v-v_{\text{e}})}{dt}}=-a(v-v_{\text{e}})-b_{\text{g}}(\theta -\theta _{\text{e}})+b(u-u_{\text{e}})+{\text{higher-order terms,}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>d</mi>
+              <mo stretchy="false">(</mo>
+              <mi>v</mi>
+              <mo>&#x2212;<!-- − --></mo>
+              <msub>
+                <mi>v</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mtext>e</mtext>
+                </mrow>
+              </msub>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+              <mi>d</mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>a</mi>
+        <mo stretchy="false">(</mo>
+        <mi>v</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>e</mtext>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>b</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>g</mtext>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>&#x03B8;<!-- θ --></mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>&#x03B8;<!-- θ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>e</mtext>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>+</mo>
+        <mi>b</mi>
+        <mo stretchy="false">(</mo>
+        <mi>u</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>u</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>e</mtext>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtext>higher-order terms,</mtext>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {d(v-v_{\text{e}})}{dt}}=-a(v-v_{\text{e}})-b_{\text{g}}(\theta -\theta _{\text{e}})+b(u-u_{\text{e}})+{\text{higher-order terms,}}}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/c888a2d32eeca1a5e89ef380798dc3591a506dfe" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:70.909ex; height:5.843ex;" alt="{\displaystyle {\frac {d(v-v_{\text{e}})}{dt}}=-a(v-v_{\text{e}})-b_{\text{g}}(\theta -\theta _{\text{e}})+b(u-u_{\text{e}})+{\text{higher-order terms,}}}"/></span></center>
+<p>where
+</p>
+<center><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle a={\frac {\rho C_{\text{d}}A|v_{\text{e}}|-u_{\text{e}}\alpha _{n}^{2}T'(\alpha _{n}v_{\text{e}})}{m}},\qquad b_{\text{g}}=g\cos {\theta _{\text{e}}},\qquad b={\frac {\alpha _{n}T(\alpha _{n}v_{\text{e}})}{m}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mi>&#x03C1;<!-- ρ --></mi>
+              <msub>
+                <mi>C</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mtext>d</mtext>
+                </mrow>
+              </msub>
+              <mi>A</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo stretchy="false">|</mo>
+              </mrow>
+              <msub>
+                <mi>v</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mtext>e</mtext>
+                </mrow>
+              </msub>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mo stretchy="false">|</mo>
+              </mrow>
+              <mo>&#x2212;<!-- − --></mo>
+              <msub>
+                <mi>u</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mtext>e</mtext>
+                </mrow>
+              </msub>
+              <msubsup>
+                <mi>&#x03B1;<!-- α --></mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                </mrow>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>2</mn>
+                </mrow>
+              </msubsup>
+              <msup>
+                <mi>T</mi>
+                <mo>&#x2032;</mo>
+              </msup>
+              <mo stretchy="false">(</mo>
+              <msub>
+                <mi>&#x03B1;<!-- α --></mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                </mrow>
+              </msub>
+              <msub>
+                <mi>v</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mtext>e</mtext>
+                </mrow>
+              </msub>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mi>m</mi>
+          </mfrac>
+        </mrow>
+        <mo>,</mo>
+        <mspace width="2em" />
+        <msub>
+          <mi>b</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>g</mtext>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mi>g</mi>
+        <mi>cos</mi>
+        <mo>&#x2061;<!-- ⁡ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msub>
+            <mi>&#x03B8;<!-- θ --></mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mtext>e</mtext>
+            </mrow>
+          </msub>
+        </mrow>
+        <mo>,</mo>
+        <mspace width="2em" />
+        <mi>b</mi>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msub>
+                <mi>&#x03B1;<!-- α --></mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                </mrow>
+              </msub>
+              <mi>T</mi>
+              <mo stretchy="false">(</mo>
+              <msub>
+                <mi>&#x03B1;<!-- α --></mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>n</mi>
+                </mrow>
+              </msub>
+              <msub>
+                <mi>v</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mtext>e</mtext>
+                </mrow>
+              </msub>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mi>m</mi>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a={\frac {\rho C_{\text{d}}A|v_{\text{e}}|-u_{\text{e}}\alpha _{n}^{2}T'(\alpha _{n}v_{\text{e}})}{m}},\qquad b_{\text{g}}=g\cos {\theta _{\text{e}}},\qquad b={\frac {\alpha _{n}T(\alpha _{n}v_{\text{e}})}{m}}.}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/e1783b29bc49f2c35805107563b50cec38849bd8" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.838ex; width:71.239ex; height:5.843ex;" alt="{\displaystyle a={\frac {\rho C_{\text{d}}A|v_{\text{e}}|-u_{\text{e}}\alpha _{n}^{2}T&#039;(\alpha _{n}v_{\text{e}})}{m}},\qquad b_{\text{g}}=g\cos {\theta _{\text{e}}},\qquad b={\frac {\alpha _{n}T(\alpha _{n}v_{\text{e}})}{m}}.}"/></span></center>
+<div class="floatright"><a href="File_Cruise-linear_vs_nonlinear.html" class="image" title="Simulated response of a vehicle with PI cruise control as it climbs a hill with a slope of 4 degrees (smaller velocity deviation/throttle) and a slope of 6 degrees (larger velocity deviation/throttle). The solid line is the simulation based on a nonlinear model, and the dashed line shows the corresponding simulation using a linear model. The controller gains are kp = 0.5 and ki = 0.1 and include anti-windup compensation (described in more detail in below)."><img alt="Simulated response of a vehicle with PI cruise control as it climbs a hill with a slope of 4 degrees (smaller velocity deviation/throttle) and a slope of 6 degrees (larger velocity deviation/throttle). The solid line is the simulation based on a nonlinear model, and the dashed line shows the corresponding simulation using a linear model. The controller gains are kp = 0.5 and ki = 0.1 and include anti-windup compensation (described in more detail in below)." src="https://fbswiki.org/wiki/images/thumb/4/43/Cruise-linear_vs_nonlinear.png/400px-Cruise-linear_vs_nonlinear.png" decoding="async" width="400" height="328" class="thumbborder" srcset="/wiki/images/4/43/Cruise-linear_vs_nonlinear.png 1.5x" /></a></div>
+<p>Notice that the term corresponding to rolling friction disappears if <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle v&gt;0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>v</mi>
+        <mo>&gt;</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle v&gt;0}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/c314fc908a83c555d34968d25e86c5ae0b76ef6f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.389ex; height:2.176ex;" alt="{\displaystyle v&gt;0}"/></span>.  For a car in fourth gear with <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle v_{\text{e}}=20}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>e</mtext>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>20</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle v_{\text{e}}=20}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/ddf2927a09b5b1b2ed2b6b6187c56bdb883992ff" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:7.513ex; height:2.509ex;" alt="{\displaystyle v_{\text{e}}=20}"/></span> m/s, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \theta _{\text{e}}=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>&#x03B8;<!-- θ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>e</mtext>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \theta _{\text{e}}=0}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/fb07f1876f1d9e0c83de2927403c95cc9d1410ae" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.314ex; height:2.509ex;" alt="{\displaystyle \theta _{\text{e}}=0}"/></span>, and the numerical values from above, the equilibrium value for the throttle is <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle u_{\text{e}}=0.1687}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>u</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>e</mtext>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>0.1687</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle u_{\text{e}}=0.1687}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/705b7ef52af64e4bbc972b37984da85e5f226467" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:11.85ex; height:2.509ex;" alt="{\displaystyle u_{\text{e}}=0.1687}"/></span> and the parameters are <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle a=0.01}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+        <mo>=</mo>
+        <mn>0.01</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a=0.01}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/14e8066fe9172350d2ea962c7fbb9a9e5daa648d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:8.462ex; height:2.176ex;" alt="{\displaystyle a=0.01}"/></span>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle b=1.32}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>b</mi>
+        <mo>=</mo>
+        <mn>1.32</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle b=1.32}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/8f588d144aee77d3ac55dbe36d52ff5f53da1355" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:8.23ex; height:2.176ex;" alt="{\displaystyle b=1.32}"/></span>, and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle b_{\text{g}}=9.8}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>b</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>g</mtext>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>9.8</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle b_{\text{g}}=9.8}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/bc10952ef30e8e3b0df4ff0e3b93dcafb6838003" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:8.122ex; height:2.843ex;" alt="{\displaystyle b_{\text{g}}=9.8}"/></span>.  This linear model describes how small perturbations in the velocity about the nominal speed evolve in time.
+</p><p>We apply the PI controller above to the case where the car is running with constant speed on a horizontal road and the system has stabilized so that the vehicle speed and the controller output are constant. The figure to the right shows what happens when the car encounters a hill with a slope of 4 degrees and a hill with a slope of 6 degrees at time <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle t=\,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>t</mi>
+        <mo>=</mo>
+        <mspace width="thinmathspace" />
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle t=\,}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/552a1654b561b94d552e7d0407a8e35fc028874e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:3.68ex; height:2.009ex;" alt="{\displaystyle t=\,}"/></span> 5 seconds. The results for the nonlinear model are dashed curves and those for the linear model are solid curves.  The differences between the curves are very small (especially for <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \theta =\,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03B8;<!-- θ --></mi>
+        <mo>=</mo>
+        <mspace width="thinmathspace" />
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \theta =\,}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/fc9b179b91bf601dd3192389bca2afe1533a1e17" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:3.931ex; height:2.176ex;" alt="{\displaystyle \theta =\,}"/></span> 4 degrees), and control design based on the linearized model is thus validated.<br clear="both" />
+</p>
+<h3><span class="mw-headline" id="Python_code_2">Python code</span></h3>
+<div class="toccolours mw-collapsible mw-collapsed">
+<div>Linearized dynamics</div>
+<div class="mw-collapsible-content"><pre># Find the equilibrium point for the system
+Xeq, Ueq = ct.find_eqpt(
+    vehicle, [vref[0]], [0, gear[0], theta0[0]], y0=[vref[0]], iu=[1, 2])
+print("Xeq = ", Xeq, "\nUeq = ", Ueq)
+
+# Compute the linearized system at the eq pt
+vehlin = ct.linearize(vehicle, Xeq, [Ueq[0], gear[0], 0], name='vehlin', copy=True)
+</pre></div></div>
+<div class="toccolours mw-collapsible mw-collapsed">
+<div>PI controller with anti-windup compensation</div>
+<div class="mw-collapsible-content"><pre>def pi_update(t, x, u, params={}):
+    # Get the controller parameters that we need
+    ki = params.get('ki', 0.1)
+    kaw = params.get('kaw', 2)  # anti-windup gain
+
+    # Assign variables for inputs and states (for readability)
+    v = u[0]                    # current velocity
+    vref = u[1]                 # reference velocity
+    z = x[0]                    # integrated error
+
+    # Compute the nominal controller output (needed for anti-windup)
+    u_a = pi_output(t, x, u, params)
+
+    # Compute anti-windup compensation (scale by ki to account for structure)
+    u_aw = kaw/ki * (np.clip(u_a, 0, 1) - u_a) if ki&#160;!= 0 else 0
+
+    # State is the integrated error, minus anti-windup compensation
+    return (vref - v) + u_aw
+
+def pi_output(t, x, u, params={}):
+    # Get the controller parameters that we need
+    kp = params.get('kp', 0.5)
+    ki = params.get('ki', 0.1)
+
+    # Assign variables for inputs and states (for readability)
+    v = u[0]                    # current velocity
+    vref = u[1]                 # reference velocity
+    z = x[0]                    # integrated error
+
+    # PI controller
+    return kp * (vref - v) + ki * z
+
+control_pi_aw = ct.NonlinearIOSystem(
+    pi_update, pi_output, name='control',
+    inputs = ['v', 'vref'], outputs = ['u'], states = ['z'],
+    params = {'kp':0.5, 'ki':0.1})
+
+# Create a closed loop controller for the linear system
+cruise_lin = ct.InterconnectedSystem(
+    (vehlin, control_pi_aw), name='cruise_lin',
+    connections=(
+        ('vehlin.u', 'control.u'),
+        ('control.v', 'vehlin.v')),
+    inplist=('control.vref', 'vehlin.gear', 'vehlin.theta'),
+    outlist=('control.u', 'vehlin.v'), outputs=['u', 'v'])
+
+# Create a closed loop controller for the nonlinear system
+cruise_nonlin = ct.InterconnectedSystem(
+    (vehicle, control_pi_aw), name='cruise_nonlin',
+    connections=(
+        ('vehicle.u', 'control.u'),
+        ('control.v', 'vehicle.v')),
+    inplist=('control.vref', 'vehicle.gear', 'vehicle.theta'),
+    outlist=('control.u', 'vehicle.v'), outputs=['u', 'v'])
+</pre></div></div>
+<div class="toccolours mw-collapsible mw-collapsed">
+<div>Simulations</div>
+<div class="mw-collapsible-content"><pre># Linear response
+X0_lin, U0 = ct.find_eqpt(
+    cruise_lin, [vref[0], 0], [vref[0], gear[0], theta0[0]],
+    y0=[0, vref[0]], iu=[1, 2], iy=[1])
+
+t, y = ct.input_output_response(cruise_lin, T, [vref, gear, theta_hill], X0_lin)
+subplots = cruise_plot(cruise_lin, t, y, t_hill=5, linetype='r-')
+
+# Nonlinear response
+X0_nonlin, U0 = ct.find_eqpt(
+    cruise_nonlin, [vref[0], 0], [vref[0], gear[0], theta0[0]],
+    y0=[0, vref[0]], iu=[1, 2], iy=[1])
+
+t, y = ct.input_output_response(cruise_nonlin, T, [vref, gear, theta_hill], X0_nonlin)
+subplots = cruise_plot(cruise_nonlin, t, y, t_hill=5, subplots=subplots, linetype='b--') 
+
+# Add a legend to identify linear vs nonlinear
+plt.legend(['linear', 'nonlinear'], frameon=False, loc='lower right')
+
+# Add two more simulations for 6 degree hill instead of 4 degree
+t, y = ct.input_output_response(cruise_lin, T, [vref, gear, theta_hill*1.5], X0_lin)
+subplots = cruise_plot(cruise_lin, t, y, t_hill=5, subplots=subplots, linetype='r-') 
+
+t, y = ct.input_output_response(cruise_nonlin, T, [vref, gear, theta_hill*1.5], X0_nonlin)
+subplots = cruise_plot(cruise_nonlin, t, y, t_hill=5, subplots=subplots, linetype='b--') 
+
+# Add titles and legends and save the figure
+plt.suptitle('Linear versus nonlinear model response')
+plt.sca(subplots[1]); plt.axis([0, 25, 0, 1.2])
+
+plt.savefig("cruise-linear_vs_nonlinear.png", bbox_inches='tight')
+</pre></div></div>
+<h2><span class="mw-headline" id="State_Space_Control">State Space Control</span></h2>
+<p>The linearized dynamics of
+the process around an equilibrium point <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle v_{\text{e}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>e</mtext>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle v_{\text{e}}}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/a0ad4222c764f1a57fe3e1f48d1e24419ea8ebfa" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.09ex; height:2.009ex;" alt="{\displaystyle v_{\text{e}}}"/></span>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle u_{\text{e}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>u</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>e</mtext>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle u_{\text{e}}}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/27c03ce0dc025fb0bc31287ee1388382de182a53" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.292ex; height:2.009ex;" alt="{\displaystyle u_{\text{e}}}"/></span> are given by
+</p>
+<center><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\begin{aligned}{\frac {dx}{dt}}&amp;=-ax-b_{\text{g}}\theta +bw,\\y&amp;=v=x+v_{\text{e}},\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <mi>d</mi>
+                      <mi>x</mi>
+                    </mrow>
+                    <mrow>
+                      <mi>d</mi>
+                      <mi>t</mi>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mo>&#x2212;<!-- − --></mo>
+                <mi>a</mi>
+                <mi>x</mi>
+                <mo>&#x2212;<!-- − --></mo>
+                <msub>
+                  <mi>b</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>g</mtext>
+                  </mrow>
+                </msub>
+                <mi>&#x03B8;<!-- θ --></mi>
+                <mo>+</mo>
+                <mi>b</mi>
+                <mi>w</mi>
+                <mo>,</mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mi>y</mi>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mi>v</mi>
+                <mo>=</mo>
+                <mi>x</mi>
+                <mo>+</mo>
+                <msub>
+                  <mi>v</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>e</mtext>
+                  </mrow>
+                </msub>
+                <mo>,</mo>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}{\frac {dx}{dt}}&amp;=-ax-b_{\text{g}}\theta +bw,\\y&amp;=v=x+v_{\text{e}},\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/94de90bf438de65ff0f35417bb5c8ed709a9e942" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.372ex; margin-bottom: -0.299ex; width:23.731ex; height:8.509ex;" alt="{\displaystyle {\begin{aligned}{\frac {dx}{dt}}&amp;=-ax-b_{\text{g}}\theta +bw,\\y&amp;=v=x+v_{\text{e}},\end{aligned}}}"/></span></center>
+<p>where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle x=v-v_{\text{e}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>x</mi>
+        <mo>=</mo>
+        <mi>v</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>e</mtext>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x=v-v_{\text{e}}}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/36c312f891a6a124c9844b60259b2811b33d2546" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:10.486ex; height:2.343ex;" alt="{\displaystyle x=v-v_{\text{e}}}"/></span>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle =u-u_{\text{e}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>=</mo>
+        <mi>u</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>u</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>e</mtext>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle =u-u_{\text{e}}}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/2ea016df61f7349886a8a03d52167846fb3c2189" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:8.915ex; height:2.343ex;" alt="{\displaystyle =u-u_{\text{e}}}"/></span>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle m}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>m</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle m}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/0a07d98bb302f3856cbabc47b2b9016692e3f7bc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:2.04ex; height:1.676ex;" alt="{\displaystyle m}"/></span> is the mass of
+the car, and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \theta }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03B8;<!-- θ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \theta }</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/6e5ab2664b422d53eb0c7df3b87e1360d75ad9af" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.09ex; height:2.176ex;" alt="{\displaystyle \theta }"/></span> is the angle of the road.  The constants <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle a}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>a</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/ffd2487510aa438433a2579450ab2b3d557e5edc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.23ex; height:1.676ex;" alt="{\displaystyle a}"/></span>,
+<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle b}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>b</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle b}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/f11423fbb2e967f986e36804a8ae4271734917c3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:0.998ex; height:2.176ex;" alt="{\displaystyle b}"/></span>, and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle b_{\text{g}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>b</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>g</mtext>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle b_{\text{g}}}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/1ba127772b0e0f63dfc97795d1a28be0bbaca0e3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:2.052ex; height:2.843ex;" alt="{\displaystyle b_{\text{g}}}"/></span> depend on the properties of the car and are
+given above.
+</p><p>If we augment the system with an integrator, the system dynamics become
+</p>
+<center><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\begin{aligned}{\frac {dx}{dt}}&amp;=-ax-b_{\text{g}}\theta +bw,\\{\frac {dz}{dt}}&amp;=y-v_{\text{r}}=v_{\text{e}}+x-v_{\text{r}},\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <mi>d</mi>
+                      <mi>x</mi>
+                    </mrow>
+                    <mrow>
+                      <mi>d</mi>
+                      <mi>t</mi>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mo>&#x2212;<!-- − --></mo>
+                <mi>a</mi>
+                <mi>x</mi>
+                <mo>&#x2212;<!-- − --></mo>
+                <msub>
+                  <mi>b</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>g</mtext>
+                  </mrow>
+                </msub>
+                <mi>&#x03B8;<!-- θ --></mi>
+                <mo>+</mo>
+                <mi>b</mi>
+                <mi>w</mi>
+                <mo>,</mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <mi>d</mi>
+                      <mi>z</mi>
+                    </mrow>
+                    <mrow>
+                      <mi>d</mi>
+                      <mi>t</mi>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mi>y</mi>
+                <mo>&#x2212;<!-- − --></mo>
+                <msub>
+                  <mi>v</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>r</mtext>
+                  </mrow>
+                </msub>
+                <mo>=</mo>
+                <msub>
+                  <mi>v</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>e</mtext>
+                  </mrow>
+                </msub>
+                <mo>+</mo>
+                <mi>x</mi>
+                <mo>&#x2212;<!-- − --></mo>
+                <msub>
+                  <mi>v</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>r</mtext>
+                  </mrow>
+                </msub>
+                <mo>,</mo>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}{\frac {dx}{dt}}&amp;=-ax-b_{\text{g}}\theta +bw,\\{\frac {dz}{dt}}&amp;=y-v_{\text{r}}=v_{\text{e}}+x-v_{\text{r}},\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/f19741436c79c96837187976c4440471bf5ab849" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -4.64ex; margin-bottom: -0.198ex; width:28.082ex; height:10.843ex;" alt="{\displaystyle {\begin{aligned}{\frac {dx}{dt}}&amp;=-ax-b_{\text{g}}\theta +bw,\\{\frac {dz}{dt}}&amp;=y-v_{\text{r}}=v_{\text{e}}+x-v_{\text{r}},\end{aligned}}}"/></span></center>
+<p>or, in state space form,
+</p>
+<center><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\frac {d}{dt}}{\begin{bmatrix}x\\z\end{bmatrix}}={\begin{bmatrix}-a&amp;0\\1&amp;0\end{bmatrix}}{\begin{bmatrix}x\\z\end{bmatrix}}+{\begin{bmatrix}b\\0\end{bmatrix}}w+{\begin{bmatrix}-b_{\text{g}}\\0\end{bmatrix}}\theta +{\begin{bmatrix}0\\v_{\text{e}}-v_{\text{r}}\end{bmatrix}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>d</mi>
+            <mrow>
+              <mi>d</mi>
+              <mi>t</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>[</mo>
+            <mtable rowspacing="4pt" columnspacing="1em">
+              <mtr>
+                <mtd>
+                  <mi>x</mi>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mi>z</mi>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>]</mo>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>[</mo>
+            <mtable rowspacing="4pt" columnspacing="1em">
+              <mtr>
+                <mtd>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <mi>a</mi>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mn>1</mn>
+                </mtd>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>]</mo>
+          </mrow>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>[</mo>
+            <mtable rowspacing="4pt" columnspacing="1em">
+              <mtr>
+                <mtd>
+                  <mi>x</mi>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mi>z</mi>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>]</mo>
+          </mrow>
+        </mrow>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>[</mo>
+            <mtable rowspacing="4pt" columnspacing="1em">
+              <mtr>
+                <mtd>
+                  <mi>b</mi>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>]</mo>
+          </mrow>
+        </mrow>
+        <mi>w</mi>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>[</mo>
+            <mtable rowspacing="4pt" columnspacing="1em">
+              <mtr>
+                <mtd>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <msub>
+                    <mi>b</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mtext>g</mtext>
+                    </mrow>
+                  </msub>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>]</mo>
+          </mrow>
+        </mrow>
+        <mi>&#x03B8;<!-- θ --></mi>
+        <mo>+</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>[</mo>
+            <mtable rowspacing="4pt" columnspacing="1em">
+              <mtr>
+                <mtd>
+                  <mn>0</mn>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <msub>
+                    <mi>v</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mtext>e</mtext>
+                    </mrow>
+                  </msub>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <msub>
+                    <mi>v</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mtext>r</mtext>
+                    </mrow>
+                  </msub>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>]</mo>
+          </mrow>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {d}{dt}}{\begin{bmatrix}x\\z\end{bmatrix}}={\begin{bmatrix}-a&amp;0\\1&amp;0\end{bmatrix}}{\begin{bmatrix}x\\z\end{bmatrix}}+{\begin{bmatrix}b\\0\end{bmatrix}}w+{\begin{bmatrix}-b_{\text{g}}\\0\end{bmatrix}}\theta +{\begin{bmatrix}0\\v_{\text{e}}-v_{\text{r}}\end{bmatrix}}.}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/6c6a1fe1045fc5d7f0821b089a58cfc8729af56a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.505ex; width:58.291ex; height:6.176ex;" alt="{\displaystyle {\frac {d}{dt}}{\begin{bmatrix}x\\z\end{bmatrix}}={\begin{bmatrix}-a&amp;0\\1&amp;0\end{bmatrix}}{\begin{bmatrix}x\\z\end{bmatrix}}+{\begin{bmatrix}b\\0\end{bmatrix}}w+{\begin{bmatrix}-b_{\text{g}}\\0\end{bmatrix}}\theta +{\begin{bmatrix}0\\v_{\text{e}}-v_{\text{r}}\end{bmatrix}}.}"/></span></center>
+<p>Note that when the system is at equilibrium, we have that <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\dot {z}}=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>z</mi>
+              <mo>&#x02D9;<!-- ˙ --></mo>
+            </mover>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\dot {z}}=0}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/64698f6ea5def90cb4eb27b65b07388730be38a0" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.557ex; height:2.176ex;" alt="{\displaystyle {\dot {z}}=0}"/></span>,
+which implies that the vehicle speed <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle v=v_{\text{e}}+x}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>v</mi>
+        <mo>=</mo>
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>e</mtext>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <mi>x</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle v=v_{\text{e}}+x}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/6fc72a366938eede6d9cd4b1d4114e07133a38fb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:10.486ex; height:2.343ex;" alt="{\displaystyle v=v_{\text{e}}+x}"/></span> should be
+equal to the desired reference speed <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle v_{\text{r}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>r</mtext>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle v_{\text{r}}}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/b732ef992c8ed9e1a6176f8f75fb8696df730d95" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.004ex; height:2.009ex;" alt="{\displaystyle v_{\text{r}}}"/></span>.  Our controller will be of
+the form
+</p>
+<center><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\begin{aligned}{\frac {dz}{dt}}&amp;=y-v_{\text{r}},\\w&amp;=-k_{\text{p}}x-k_{\text{i}}z+k_{\text{f}}v_{\text{r}},\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mfrac>
+                    <mrow>
+                      <mi>d</mi>
+                      <mi>z</mi>
+                    </mrow>
+                    <mrow>
+                      <mi>d</mi>
+                      <mi>t</mi>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mi>y</mi>
+                <mo>&#x2212;<!-- − --></mo>
+                <msub>
+                  <mi>v</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>r</mtext>
+                  </mrow>
+                </msub>
+                <mo>,</mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mi>w</mi>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo>=</mo>
+                <mo>&#x2212;<!-- − --></mo>
+                <msub>
+                  <mi>k</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>p</mtext>
+                  </mrow>
+                </msub>
+                <mi>x</mi>
+                <mo>&#x2212;<!-- − --></mo>
+                <msub>
+                  <mi>k</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>i</mtext>
+                  </mrow>
+                </msub>
+                <mi>z</mi>
+                <mo>+</mo>
+                <msub>
+                  <mi>k</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>f</mtext>
+                  </mrow>
+                </msub>
+                <msub>
+                  <mi>v</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mtext>r</mtext>
+                  </mrow>
+                </msub>
+                <mo>,</mo>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}{\frac {dz}{dt}}&amp;=y-v_{\text{r}},\\w&amp;=-k_{\text{p}}x-k_{\text{i}}z+k_{\text{f}}v_{\text{r}},\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/09207e7d9c4c1c8a4c848a258353110e10ba1d71" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.467ex; margin-bottom: -0.204ex; width:25.862ex; height:8.509ex;" alt="{\displaystyle {\begin{aligned}{\frac {dz}{dt}}&amp;=y-v_{\text{r}},\\w&amp;=-k_{\text{p}}x-k_{\text{i}}z+k_{\text{f}}v_{\text{r}},\end{aligned}}}"/></span></center>
+<p>and the gains <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle k_{\text{p}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>k</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>p</mtext>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle k_{\text{p}}}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/adc117705189836f5f4b1a187a30dd837437a19e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:2.357ex; height:2.843ex;" alt="{\displaystyle k_{\text{p}}}"/></span>, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle k_{\text{i}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>k</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>i</mtext>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle k_{\text{i}}}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/f237c608ccb451a9c05bc2af96c81d844904c515" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.901ex; height:2.509ex;" alt="{\displaystyle k_{\text{i}}}"/></span>, and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle k_{\text{f}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>k</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>f</mtext>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle k_{\text{f}}}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/396f9d9bb21c2d5bd1b9350b5832df589f56ed1b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.055ex; height:2.509ex;" alt="{\displaystyle k_{\text{f}}}"/></span> will be chosen to
+stabilize the system and provide the correct input for the reference speed.
+</p><p>Assume that we wish to design the closed loop system to have the
+characteristic polynomial
+</p>
+<center><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \lambda (s)=s^{2}+a_{1}s+a_{2}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03BB;<!-- λ --></mi>
+        <mo stretchy="false">(</mo>
+        <mi>s</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <msup>
+          <mi>s</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mi>s</mi>
+        <mo>+</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \lambda (s)=s^{2}+a_{1}s+a_{2}.}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/ebbd12ac2820fe60f0a019701bf84446aeca0549" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:21.484ex; height:3.176ex;" alt="{\displaystyle \lambda (s)=s^{2}+a_{1}s+a_{2}.}"/></span></center>
+<p>Setting the disturbance <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \theta =0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03B8;<!-- θ --></mi>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \theta =0}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/2a7bc6e34b53e0e8a8815159c356b1acccf7ea24" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.351ex; height:2.176ex;" alt="{\displaystyle \theta =0}"/></span>, 
+the characteristic polynomial of the closed loop system is given by
+</p>
+<center><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \det {\bigl (}sI-(A-BK){\bigr )}=s^{2}+(bk_{\text{p}}+a)s+bk_{\text{i}},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo movablelimits="true" form="prefix">det</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-OPEN">
+            <mo maxsize="1.2em" minsize="1.2em">(</mo>
+          </mrow>
+        </mrow>
+        <mi>s</mi>
+        <mi>I</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>B</mi>
+        <mi>K</mi>
+        <mo stretchy="false">)</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-CLOSE">
+            <mo maxsize="1.2em" minsize="1.2em">)</mo>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <msup>
+          <mi>s</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mo stretchy="false">(</mo>
+        <mi>b</mi>
+        <msub>
+          <mi>k</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>p</mtext>
+          </mrow>
+        </msub>
+        <mo>+</mo>
+        <mi>a</mi>
+        <mo stretchy="false">)</mo>
+        <mi>s</mi>
+        <mo>+</mo>
+        <mi>b</mi>
+        <msub>
+          <mi>k</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>i</mtext>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \det {\bigl (}sI-(A-BK){\bigr )}=s^{2}+(bk_{\text{p}}+a)s+bk_{\text{i}},}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/af6bc140231a335ea5b52782e26ee4d76c0105ea" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:45.866ex; height:3.343ex;" alt="{\displaystyle \det {\bigl (}sI-(A-BK){\bigr )}=s^{2}+(bk_{\text{p}}+a)s+bk_{\text{i}},}"/></span></center>
+<p>and hence we set
+</p>
+<center><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle k_{\text{p}}={\frac {a_{1}-a}{b}},\qquad k_{\text{i}}={\frac {a_{2}}{b}},\qquad k_{\text{f}}={-1}/{\bigl (}C(A-BK)^{-1}B{\bigr )}={\frac {a_{1}}{b}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>k</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>p</mtext>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msub>
+                <mi>a</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>1</mn>
+                </mrow>
+              </msub>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>a</mi>
+            </mrow>
+            <mi>b</mi>
+          </mfrac>
+        </mrow>
+        <mo>,</mo>
+        <mspace width="2em" />
+        <msub>
+          <mi>k</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>i</mtext>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msub>
+              <mi>a</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msub>
+            <mi>b</mi>
+          </mfrac>
+        </mrow>
+        <mo>,</mo>
+        <mspace width="2em" />
+        <msub>
+          <mi>k</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>f</mtext>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>&#x2212;<!-- − --></mo>
+          <mn>1</mn>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-OPEN">
+            <mo maxsize="1.2em" minsize="1.2em">(</mo>
+          </mrow>
+        </mrow>
+        <mi>C</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>B</mi>
+        <mi>K</mi>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>&#x2212;<!-- − --></mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mi>B</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-CLOSE">
+            <mo maxsize="1.2em" minsize="1.2em">)</mo>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msub>
+              <mi>a</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+            <mi>b</mi>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle k_{\text{p}}={\frac {a_{1}-a}{b}},\qquad k_{\text{i}}={\frac {a_{2}}{b}},\qquad k_{\text{f}}={-1}/{\bigl (}C(A-BK)^{-1}B{\bigr )}={\frac {a_{1}}{b}}.}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/0fd61d521e810f022d0c6a81149d248984374c84" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:66.492ex; height:5.176ex;" alt="{\displaystyle k_{\text{p}}={\frac {a_{1}-a}{b}},\qquad k_{\text{i}}={\frac {a_{2}}{b}},\qquad k_{\text{f}}={-1}/{\bigl (}C(A-BK)^{-1}B{\bigr )}={\frac {a_{1}}{b}}.}"/></span></center>
+<div class="floatright"><a href="File_Cruise-statefbk.html" class="image" title="Velocity and throttle for a car with cruise control based on state feedback (dashed) and state feedback with integral action (solid). The controller with integral action is able to adjust the throttle to compensate for the effect of the hill and maintain the speed at the reference value of vr = 20 m/s. The controller gains are kp = 0.5 and ki = 0.1."><img alt="Velocity and throttle for a car with cruise control based on state feedback (dashed) and state feedback with integral action (solid). The controller with integral action is able to adjust the throttle to compensate for the effect of the hill and maintain the speed at the reference value of vr = 20 m/s. The controller gains are kp = 0.5 and ki = 0.1." src="https://fbswiki.org/wiki/images/thumb/6/6c/Cruise-statefbk.png/400px-Cruise-statefbk.png" decoding="async" width="400" height="328" class="thumbborder" srcset="/wiki/images/6/6c/Cruise-statefbk.png 1.5x" /></a></div>
+<p>The resulting controller stabilizes the system and hence brings
+<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle {\dot {z}}=y-v_{\text{r}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>z</mi>
+              <mo>&#x02D9;<!-- ˙ --></mo>
+            </mover>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mi>y</mi>
+        <mo>&#x2212;<!-- − --></mo>
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>r</mtext>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\dot {z}}=y-v_{\text{r}}}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/00556bd25d7577bf77dd4fd1d448cfd6599d17bd" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:10.395ex; height:2.509ex;" alt="{\displaystyle {\dot {z}}=y-v_{\text{r}}}"/></span> to zero, resulting in perfect tracking.
+Notice that even if we have a small error in the values of the
+parameters defining the system, as long as the closed loop eigenvalues
+are still stable, then the tracking error will approach zero.  Thus
+the exact calibration required in
+our previous approach (using <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle k_{\text{f}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>k</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>f</mtext>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle k_{\text{f}}}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/396f9d9bb21c2d5bd1b9350b5832df589f56ed1b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.055ex; height:2.509ex;" alt="{\displaystyle k_{\text{f}}}"/></span>) is not needed here.
+Indeed, we can even choose <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle k_{\text{f}}=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>k</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>f</mtext>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle k_{\text{f}}=0}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/a0789e783267dfc4f08badb553d3659bc3b191b1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.316ex; height:2.509ex;" alt="{\displaystyle k_{\text{f}}=0}"/></span> and let the feedback
+controller do all of the work.  However, <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle k_{\text{f}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>k</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>f</mtext>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle k_{\text{f}}}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/396f9d9bb21c2d5bd1b9350b5832df589f56ed1b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.055ex; height:2.509ex;" alt="{\displaystyle k_{\text{f}}}"/></span> does influence
+the transient response to reference signals and setting it properly
+will generally give a more favorable response.
+</p><p>Integral feedback can also be used to compensate for constant
+disturbances.  The figure to the right shows the results of
+a simulation in which the car encounters a hill with angle
+<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \theta =4}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03B8;<!-- θ --></mi>
+        <mo>=</mo>
+        <mn>4</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \theta =4}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/4e636c428ffe95e653049be7d192805ca54c251d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.351ex; height:2.176ex;" alt="{\displaystyle \theta =4}"/></span> degrees at <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle t=}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>t</mi>
+        <mo>=</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle t=}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/f5df1d00339110a18aedcc3787fdeb9fedb6bcbe" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:3.293ex; height:2.009ex;" alt="{\displaystyle t=}"/></span> 5 seconds.  The
+steady-state values of the throttle for a state feedback controller
+and a controller with integral action are very close, but the
+corresponding values of the car velocity are quite different.  The
+reason for this is that the zero frequency gain from throttle to
+velocity is <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle -b/a=130}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>&#x2212;<!-- − --></mo>
+        <mi>b</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mi>a</mi>
+        <mo>=</mo>
+        <mn>130</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle -b/a=130}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/a18e698ad92c592222ca21a2c3e8677f158a9b81" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:11.784ex; height:2.843ex;" alt="{\displaystyle -b/a=130}"/></span> is high.
+The stability of the system is not affected by this external
+disturbance, and so we once again see that the car's velocity converges
+to the reference speed.  This ability to handle constant disturbances
+is a general property of controllers with integral feedback.
+</p>
+<h3><span class="mw-headline" id="Python_code_3">Python code</span></h3>
+<div class="toccolours mw-collapsible mw-collapsed">
+<div>State feedback controller</div>
+<div class="mw-collapsible-content"><pre>def sf_update(t, z, u, params={}):
+    y, r = u[1], u[2]
+    return y - r
+
+def sf_output(t, z, u, params={}):
+    # Get the controller parameters that we need
+    K = params.get('K', 0)
+    ki = params.get('ki', 0)
+    kf = params.get('kf', 0)
+    xd = params.get('xd', 0)
+    yd = params.get('yd', 0)
+    ud = params.get('ud', 0)
+
+    # Get the system state and reference input
+    x, y, r = u[0], u[1], u[2]
+
+    return ud - K * (x - xd) - ki * z + kf * (r - yd)
+
+# Create the input/output system for the controller
+control_sf = ct.NonlinearIOSystem(
+    sf_update, sf_output, name='control',
+    inputs=('x', 'y', 'r'),
+    outputs=('u'),
+    states=('z'))
+
+# Create the closed loop system for the state space controller
+cruise_sf = ct.InterconnectedSystem(
+    (vehicle, control_sf), name='cruise',
+    connections=(
+        ('vehicle.u', 'control.u'),
+        ('control.x', 'vehicle.v'),
+        ('control.y', 'vehicle.v')),
+    inplist=('control.r', 'vehicle.gear', 'vehicle.theta'),
+    outlist=('control.u', 'vehicle.v'), outputs=['u', 'v'])
+
+# Construct the gain matrices for the system
+A, B, C = vehlin.A, vehlin.B[0, 0], vehlin.C
+K = 0.5
+kf = -1 / (C * np.linalg.inv(A - B * K) * B)
+
+# Compute the steady state velocity and throttle setting
+xd = Xeq[0]
+ud = Ueq[0]
+yd = vref[-1]
+</pre></div></div>
+<div class="toccolours mw-collapsible mw-collapsed">
+<div>Simulation (plot)</div>
+<div class="mw-collapsible-content"><pre># Response of the system with no integral feedback term
+t, y_sfb = ct.input_output_response(
+    cruise_sf, T, [vref, gear, theta_hill], [Xeq[0], 0],
+    params={'K':K, 'ki':0.0, 'kf':kf, 'xd':xd, 'ud':ud, 'yd':yd})
+subplots = cruise_plot(cruise_sf, t, y_sfb, t_hill=5, linetype='b--')
+
+# Response of the system with state feedback + integral action
+t, y_sfb_int = ct.input_output_response(
+    cruise_sf, T, [vref, gear, theta_hill], [Xeq[0], 0],
+    params={'K':K, 'ki':0.1, 'kf':kf, 'xd':xd, 'ud':ud, 'yd':yd})
+cruise_plot(cruise_sf, t, y_sfb_int, t_hill=5, linetype='b-', subplots=subplots)
+
+# Add title and legend
+plt.suptitle('Cruise control with state feedback, integral action')
+p_line = mpl.lines.Line2D([], [], color='blue', linestyle='--', label='State feedback')
+pi_line = mpl.lines.Line2D([], [], color='blue', linestyle='-', label='w/ integral action')
+plt.legend(handles=[p_line, pi_line], frameon=False, loc='lower right')
+plt.savefig("cruise-statefbk.png", bbox_inches='tight')
+</pre></div></div>
+<h2><span class="mw-headline" id="PID_Control">PID Control</span></h2>
+<p>The dynamics of the system are given by a first-order system with the transfer function
+</p>
+<center><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle P(s)={\frac {b}{s+a}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>s</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mi>b</mi>
+            <mrow>
+              <mi>s</mi>
+              <mo>+</mo>
+              <mi>a</mi>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P(s)={\frac {b}{s+a}}.}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/4f45f72761464e1523d3ba91f0ba3e2c66c218b9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:14.387ex; height:5.509ex;" alt="{\displaystyle P(s)={\frac {b}{s+a}}.}"/></span></center>
+<p>With a PI controller the closed loop system has the characteristic polynomial
+</p>
+<center><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle s(s+a)+bk_{\text{p}}s+bk_{\text{i}}=s^{2}+(a+bk_{\text{p}})s+bk_{\text{i}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>s</mi>
+        <mo stretchy="false">(</mo>
+        <mi>s</mi>
+        <mo>+</mo>
+        <mi>a</mi>
+        <mo stretchy="false">)</mo>
+        <mo>+</mo>
+        <mi>b</mi>
+        <msub>
+          <mi>k</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>p</mtext>
+          </mrow>
+        </msub>
+        <mi>s</mi>
+        <mo>+</mo>
+        <mi>b</mi>
+        <msub>
+          <mi>k</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>i</mtext>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msup>
+          <mi>s</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mo stretchy="false">(</mo>
+        <mi>a</mi>
+        <mo>+</mo>
+        <mi>b</mi>
+        <msub>
+          <mi>k</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>p</mtext>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mi>s</mi>
+        <mo>+</mo>
+        <mi>b</mi>
+        <msub>
+          <mi>k</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>i</mtext>
+          </mrow>
+        </msub>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle s(s+a)+bk_{\text{p}}s+bk_{\text{i}}=s^{2}+(a+bk_{\text{p}})s+bk_{\text{i}}.}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/4d9281dec029d30034f6c588851b0c07b45d779a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:45.879ex; height:3.343ex;" alt="{\displaystyle s(s+a)+bk_{\text{p}}s+bk_{\text{i}}=s^{2}+(a+bk_{\text{p}})s+bk_{\text{i}}.}"/></span></center>
+<p>The closed loop poles can thus be assigned arbitrary values by proper 
+choice of the controller gains <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle k_{\text{p}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>k</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>p</mtext>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle k_{\text{p}}}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/adc117705189836f5f4b1a187a30dd837437a19e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:2.357ex; height:2.843ex;" alt="{\displaystyle k_{\text{p}}}"/></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle k_{\text{i}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>k</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>i</mtext>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle k_{\text{i}}}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/f237c608ccb451a9c05bc2af96c81d844904c515" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.901ex; height:2.509ex;" alt="{\displaystyle k_{\text{i}}}"/></span>.
+Requiring that the closed loop system have the characteristic polynomial
+</p>
+<center><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle p(s)=s^{2}+a_{1}s+a_{2},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>p</mi>
+        <mo stretchy="false">(</mo>
+        <mi>s</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <msup>
+          <mi>s</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mi>s</mi>
+        <mo>+</mo>
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p(s)=s^{2}+a_{1}s+a_{2},}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/291fd50522ae7adb10db5303fe3a624954b3fe4b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; margin-left: -0.089ex; width:21.388ex; height:3.176ex;" alt="{\displaystyle p(s)=s^{2}+a_{1}s+a_{2},}"/></span></center>
+<p>we find that the controller parameters are
+</p>
+<center><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle k_{\text{p}}={\frac {a_{1}-a}{b}},\qquad k_{\text{i}}={\frac {a_{2}}{b}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>k</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>p</mtext>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <msub>
+                <mi>a</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mn>1</mn>
+                </mrow>
+              </msub>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>a</mi>
+            </mrow>
+            <mi>b</mi>
+          </mfrac>
+        </mrow>
+        <mo>,</mo>
+        <mspace width="2em" />
+        <msub>
+          <mi>k</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>i</mtext>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msub>
+              <mi>a</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msub>
+            <mi>b</mi>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle k_{\text{p}}={\frac {a_{1}-a}{b}},\qquad k_{\text{i}}={\frac {a_{2}}{b}}.}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/eca93ccdc300bf6a0b24abe24844edfdbc492b2b" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.005ex; width:27.092ex; height:5.176ex;" alt="{\displaystyle k_{\text{p}}={\frac {a_{1}-a}{b}},\qquad k_{\text{i}}={\frac {a_{2}}{b}}.}"/></span></center>
+<div class="floatright"><a href="File_Cruise-pid-sweep-zeta.html" class="image" title="Cruise control using PI feedback. The step responses for the error and input illustrate the effect of parameters zeta_c and omega_c on the response of a car with cruise control. The slope of the road changes linearly from 0 degrees to 4 degrees between t = 5 and 6 seconds. Responses for omega_c = 0.5 and zeta_c = 0.5, 1, and 2. Choosing zeta_c &gt;= 1 gives no overshoot in the velocity v."><img alt="Cruise control using PI feedback. The step responses for the error and input illustrate the effect of parameters zeta_c and omega_c on the response of a car with cruise control. The slope of the road changes linearly from 0 degrees to 4 degrees between t = 5 and 6 seconds. Responses for omega_c = 0.5 and zeta_c = 0.5, 1, and 2. Choosing zeta_c &gt;= 1 gives no overshoot in the velocity v." src="https://fbswiki.org/wiki/images/thumb/e/e0/Cruise-pid-sweep-zeta.png/400px-Cruise-pid-sweep-zeta.png" decoding="async" width="400" height="328" class="thumbborder" srcset="/wiki/images/e/e0/Cruise-pid-sweep-zeta.png 1.5x" /></a></div>
+<p>If we require a response of the closed loop system that is slower than
+that of the open loop system, a reasonable choice is <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle a_{1}=a+\alpha }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mi>a</mi>
+        <mo>+</mo>
+        <mi>&#x03B1;<!-- α --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a_{1}=a+\alpha }</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/7151ca8bccb2e39691e11e7d35cc31f43b539812" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:10.94ex; height:2.343ex;" alt="{\displaystyle a_{1}=a+\alpha }"/></span>
+and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle a_{2}=\alpha a}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mi>&#x03B1;<!-- α --></mi>
+        <mi>a</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a_{2}=\alpha a}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/286176b1f158cdce7a714764489d8cf9736cf9d3" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:8.1ex; height:2.009ex;" alt="{\displaystyle a_{2}=\alpha a}"/></span>, where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \alpha &lt;a}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>&#x03B1;<!-- α --></mi>
+        <mo>&lt;</mo>
+        <mi>a</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \alpha &lt;a}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/3ac8958012a7f38d3e4f3303c646fa7d948a7b87" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.816ex; height:1.843ex;" alt="{\displaystyle \alpha &lt;a}"/></span> determines the closed loop
+response.  If a response faster than that of the open loop system is
+required, a possible choice is <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle a_{1}=2\zeta _{\text{c}}\omega _{\text{c}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>2</mn>
+        <msub>
+          <mi>&#x03B6;<!-- ζ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>c</mtext>
+          </mrow>
+        </msub>
+        <msub>
+          <mi>&#x03C9;<!-- ω --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>c</mtext>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a_{1}=2\zeta _{\text{c}}\omega _{\text{c}}}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/8ee6718edfa2711c06689ef1ffdf56fcd297888f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:10.934ex; height:2.509ex;" alt="{\displaystyle a_{1}=2\zeta _{\text{c}}\omega _{\text{c}}}"/></span> and
+<span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle a_{2}=\omega _{\text{c}}^{2}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>a</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <msubsup>
+          <mi>&#x03C9;<!-- ω --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>c</mtext>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msubsup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle a_{2}=\omega _{\text{c}}^{2}}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/c989b9920f3d0bfd2fc90f14cece5b1e3873c7dc" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:7.883ex; height:2.843ex;" alt="{\displaystyle a_{2}=\omega _{\text{c}}^{2}}"/></span>,
+where <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \omega _{\text{c}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>&#x03C9;<!-- ω --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>c</mtext>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \omega _{\text{c}}}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/3cca75b1b68b41fbc378508edf81f6bb5524194a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.408ex; height:2.009ex;" alt="{\displaystyle \omega _{\text{c}}}"/></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \zeta _{\text{c}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>&#x03B6;<!-- ζ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>c</mtext>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \zeta _{\text{c}}}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/fd605a65a62a44e5ea836601550e56cb8811d57f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.981ex; height:2.509ex;" alt="{\displaystyle \zeta _{\text{c}}}"/></span> are the undamped natural
+frequency and damping ratio of the dominant mode.
+</p><p>To design a PI controller we choose <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \zeta _{\text{c}}=1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>&#x03B6;<!-- ζ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>c</mtext>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \zeta _{\text{c}}=1}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/ef2aed41f3a0db28afa01d9dc9338c39b38c447a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:6.242ex; height:2.509ex;" alt="{\displaystyle \zeta _{\text{c}}=1}"/></span> to obtain a response without overshoot. The choice of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \omega _{\text{c}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>&#x03C9;<!-- ω --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>c</mtext>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \omega _{\text{c}}}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/3cca75b1b68b41fbc378508edf81f6bb5524194a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.408ex; height:2.009ex;" alt="{\displaystyle \omega _{\text{c}}}"/></span> is a compromise between response speed and control actions: a large value gives a fast response, but it requires fast control action. The largest velocity error decreases with increasing <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \omega _{\text{c}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>&#x03C9;<!-- ω --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>c</mtext>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \omega _{\text{c}}}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/3cca75b1b68b41fbc378508edf81f6bb5524194a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.408ex; height:2.009ex;" alt="{\displaystyle \omega _{\text{c}}}"/></span>, but the control signal also changes more rapidly. In the simple model it was assumed that the force responds instantaneously to throttle commands. For rapid changes there may be additional dynamics that have to be accounted for.  There are also physical limits to the rate of change of the force, which also restricts the admissible value of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \omega _{\text{c}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>&#x03C9;<!-- ω --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>c</mtext>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \omega _{\text{c}}}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/3cca75b1b68b41fbc378508edf81f6bb5524194a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.408ex; height:2.009ex;" alt="{\displaystyle \omega _{\text{c}}}"/></span>. A reasonable choice of <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \omega _{\text{c}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>&#x03C9;<!-- ω --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>c</mtext>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \omega _{\text{c}}}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/3cca75b1b68b41fbc378508edf81f6bb5524194a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.408ex; height:2.009ex;" alt="{\displaystyle \omega _{\text{c}}}"/></span> is in the range 0.5--1.0.
+</p>
+<h3><span class="mw-headline" id="Python_code_4">Python code</span></h3>
+<div class="toccolours mw-collapsible mw-collapsed">
+<div>Get transfer function parameters</div>
+<div class="mw-collapsible-content"><pre># Get the transfer function from throttle input + hill to vehicle speed
+P = ct.ss2tf(vehlin[0, 0])
+
+# Construction a controller that cancels the pole
+a = -P.pole()[0]
+b = np.real(P(0)) * a
+</pre></div></div>
+<div class="toccolours mw-collapsible mw-collapsed">
+<div>Fix <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \omega _{\text{c}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>&#x03C9;<!-- ω --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>c</mtext>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \omega _{\text{c}}}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/3cca75b1b68b41fbc378508edf81f6bb5524194a" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.408ex; height:2.009ex;" alt="{\displaystyle \omega _{\text{c}}}"/></span> and vary <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \zeta _{\text{c}}(plot)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>&#x03B6;<!-- ζ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>c</mtext>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>p</mi>
+        <mi>l</mi>
+        <mi>o</mi>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \zeta _{\text{c}}(plot)}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/867993d20917bab5822bf15fee84903daacda90d" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:7.62ex; height:2.843ex;" alt="{\displaystyle \zeta _{\text{c}}(plot)}"/></span></div>
+<div class="mw-collapsible-content"><pre># Fix \omega_0 and vary \zeta
+w0 = 0.5
+subplots = [None, None]
+for zeta in [0.5, 1, 2]:
+    # Create the controller transfer function (as an I/O system)
+    kp = (2*zeta*w0 - a)/b
+    ki = w0**2 / b
+    control_tf = ct.tf2io(
+        ct.TransferFunction([kp, ki], [1, 0.01*ki/kp]),
+        name='control', inputs='u', outputs='y')
+    
+    # Construct the closed loop system by interconnecting process and controller
+    cruise_tf = ct.InterconnectedSystem(
+    (vehicle, control_tf), name='cruise',
+    connections = [('control.u', '-vehicle.v'), ('vehicle.u', 'control.y')],
+    inplist = ('control.u', 'vehicle.gear', 'vehicle.theta'), 
+        inputs = ('vref', 'gear', 'theta'),
+    outlist = ('vehicle.v', 'vehicle.u'), outputs = ('v', 'u'))
+
+    # Plot the velocity response
+    X0, U0 = ct.find_eqpt(
+        cruise_tf, [vref[0], 0], [vref[0], gear[0], theta_hill[0]], 
+        iu=[1, 2], y0=[vref[0], 0], iy=[0])
+
+    t, y = ct.input_output_response(cruise_tf, T, [vref, gear, theta_hill], X0)
+    subplots = cruise_plot(cruise_tf, t, y, t_hill=5, subplots=subplots)
+
+plt.suptitle('PID controller with varying zeta')
+plt.savefig("cruise-pid-sweep-zeta.png", bbox_inches='tight')
+</pre></div></div>
+<div class="toccolours mw-collapsible mw-collapsed">
+<div>Fix vary <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \zeta _{\text{c}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>&#x03B6;<!-- ζ --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>c</mtext>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \zeta _{\text{c}}}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/fd605a65a62a44e5ea836601550e56cb8811d57f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:1.981ex; height:2.509ex;" alt="{\displaystyle \zeta _{\text{c}}}"/></span> and <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle \omega _{\text{c}}(plot)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>&#x03C9;<!-- ω --></mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>c</mtext>
+          </mrow>
+        </msub>
+        <mo stretchy="false">(</mo>
+        <mi>p</mi>
+        <mi>l</mi>
+        <mi>o</mi>
+        <mi>t</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \omega _{\text{c}}(plot)}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/3ab99403eeeb74fbb1ee8c91e52a7843b80c7ae6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:8.047ex; height:2.843ex;" alt="{\displaystyle \omega _{\text{c}}(plot)}"/></span></div>
+<div class="mw-collapsible-content"><pre>zeta = 1
+subplots = [None, None]
+for w0 in [0.2, 0.5, 1]:
+    # Create the controller transfer function (as an I/O system)
+    kp = (2*zeta*w0 - a)/b
+    ki = w0**2 / b
+    control_tf = ct.tf2io(
+        ct.TransferFunction([kp, ki], [1, 0.01*ki/kp]),
+        name='control', inputs='u', outputs='y')
+    
+    # Construct the closed loop system by interconnecting process and controller
+    cruise_tf = ct.InterconnectedSystem(
+        (vehicle, control_tf), name='cruise',
+        connections = [('control.u', '-vehicle.v'), ('vehicle.u', 'control.y')],
+        inplist = ('control.u', 'vehicle.gear', 'vehicle.theta'), 
+        inputs = ('vref', 'gear', 'theta'),
+        outlist = ('vehicle.v', 'vehicle.u'), outputs = ('v', 'u'))
+
+    # Plot the velocity response
+    X0, U0 = ct.find_eqpt(
+        cruise_tf, [vref[0], 0], [vref[0], gear[0], theta_hill[0]], 
+        iu=[1, 2], y0=[vref[0], 0], iy=[0])
+
+    t, y = ct.input_output_response(cruise_tf, T, [vref, gear, theta_hill], X0)
+    subplots = cruise_plot(cruise_tf, t, y, t_hill=5, subplots=subplots)
+
+plt.suptitle('PID controller with varying omega')
+plt.savefig("cruise-pid-sweep-omega.png", bbox_inches='tight')
+</pre></div></div>
+<h3><span class="mw-headline" id="Anti-windup_compensation">Anti-windup compensation</span></h3>
+<p>The windup effect is illustrated in the left figure below, which shows what happens when a car encounters a hill that is so steep (6 degrees) that the throttle saturates when the cruise controller attempts to maintain speed. When encountering the slope at time <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle t=5}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>t</mi>
+        <mo>=</mo>
+        <mn>5</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle t=5}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/8c091c024336b28a888b09d76e71f42f09e13e8f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:5.101ex; height:2.176ex;" alt="{\displaystyle t=5}"/></span>, the velocity decreases and the throttle increases to generate more torque. However, the torque required is so large that the throttle saturates. The error decreases slowly because the torque generated by the engine is just a little larger than the torque required to compensate for gravity. The error is large and the integral continues to build up until the error reaches zero at time 25, but the controller output is still  larger than the saturation limit and the actuator remains saturated. The integral term starts to decrease and the velocity settles to the desired value at time <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle t=40}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>t</mi>
+        <mo>=</mo>
+        <mn>40</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle t=40}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/ba093f7977337118ce5650d231d871c97e80b59e" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:6.263ex; height:2.176ex;" alt="{\displaystyle t=40}"/></span>. Also notice the large overshoot.
+</p><p>The right figure below shows what happens when a controller with anti-windup is applied to the system. Because of the feedback from the actuator model, the output of the integrator is quickly reset to a value such that the controller output is at the saturation limit.  The behavior is drastically different from that on the left and the large overshoot is avoided. The tracking gain used in the simulation is <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle k_{\text{aw}}=2}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>k</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>aw</mtext>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>2</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle k_{\text{aw}}=2}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/b0c07568d64084e79dbb332ce270101df242c711" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:7.713ex; height:2.509ex;" alt="{\displaystyle k_{\text{aw}}=2}"/></span> which is an order of magnitude larger than the integral gain <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="{\displaystyle k_{\text{i}}=0.2}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>k</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mtext>i</mtext>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>0.2</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle k_{\text{i}}=0.2}</annotation>
+  </semantics>
+</math></span><img src="https://en.wikipedia.org/api/rest_v1/media/math/render/svg/519720e3d5721d573e89d772f19336a738965026" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:7.971ex; height:2.509ex;" alt="{\displaystyle k_{\text{i}}=0.2}"/></span>. 
+</p>
+<table align="center">
+
+<tbody><tr>
+<td width="45%">
+<p><a href="File_Cruise-windup.html" class="image" title="Simulation of PI cruise control with windup. The figure shows the speed v and the throttle u for a car that encounters a slope that is so steep that the throttle saturates. The controller output is a dashed line. The controller parameters are kp = 0.5 and ki = 0.1."><img alt="Simulation of PI cruise control with windup. The figure shows the speed v and the throttle u for a car that encounters a slope that is so steep that the throttle saturates. The controller output is a dashed line. The controller parameters are kp = 0.5 and ki = 0.1." src="https://fbswiki.org/wiki/images/thumb/9/97/Cruise-windup.png/400px-Cruise-windup.png" decoding="async" width="400" height="328" class="thumbborder" srcset="/wiki/images/9/97/Cruise-windup.png 1.5x" /></a>
+</p>
+</td>
+<td width="10%">
+</td>
+<td width="45%">
+<p><a href="File_Cruise-antiwindup.html" class="image" title="Simulation of PI cruise control with anti-windup. The figure shows the speed v and the throttle u for a car that encounters a slope that is so steep that the throttle saturates. The controller output is a dashed line. The controller parameters are kp = 0.5, ki = 0.1. and kaw =2. The anti-windup compensator eliminates the overshoot by preventing the error from building up in the integral term of the controller."><img alt="Simulation of PI cruise control with anti-windup. The figure shows the speed v and the throttle u for a car that encounters a slope that is so steep that the throttle saturates. The controller output is a dashed line. The controller parameters are kp = 0.5, ki = 0.1. and kaw =2. The anti-windup compensator eliminates the overshoot by preventing the error from building up in the integral term of the controller." src="https://fbswiki.org/wiki/images/thumb/5/5d/Cruise-antiwindup.png/400px-Cruise-antiwindup.png" decoding="async" width="400" height="328" class="thumbborder" srcset="/wiki/images/5/5d/Cruise-antiwindup.png 1.5x" /></a>
+</p>
+</td></tr></tbody></table>
+<h3><span class="mw-headline" id="Python_code_5">Python code</span></h3>
+<div class="toccolours mw-collapsible mw-collapsed">
+<div>Redefine input with longer duration</div>
+<div class="mw-collapsible-content"><pre>T = np.linspace(0, 50, 101)
+vref = 20 * np.ones(T.shape)
+theta_hill = [
+    0 if t &lt;= 5 else
+    6./180. * pi * (t-5) if t &lt;= 6 else
+    6./180. * pi for t in T]
+
+# Compute the equilibrium throttle setting for the desired speed
+X0, U0 = ct.find_eqpt(
+    cruise_nonlin, [vref[0], 0], [vref[0], gear[0], theta0[0]],
+    y0=[0, vref[0]], iu=[1, 2], iy=[1])
+</pre></div></div>
+<div class="toccolours mw-collapsible mw-collapsed">
+<div>Effects of windup (plot)</div>
+<div class="mw-collapsible-content"><pre>t, y = ct.input_output_response(
+    cruise_nonlin, T, [vref, gear, theta_hill], X0,
+    params={'kaw':0})
+cruise_plot(cruise_nonlin, t, y, antiwindup=True);
+
+plt.suptitle('Cruise control with integrator windup')
+plt.savefig("cruise-windup.png", bbox_inches='tight')
+</pre></div></div>
+<div class="toccolours mw-collapsible mw-collapsed">
+<div>Anti-windup compensation (plot)</div>
+<div class="mw-collapsible-content"><pre>t, y = ct.input_output_response(
+    cruise_nonlin, T, [vref, gear, theta_hill], X0,
+    params={'kaw':2})
+cruise_plot(cruise_nonlin, t, y, antiwindup=True);
+
+plt.suptitle('Cruise control with anti-windup')
+plt.savefig("cruise-antiwindup.png", bbox_inches='tight')
+</pre></div></div>
+<h2><span class="mw-headline" id="Further_Reading">Further Reading</span></h2>
+<ul><li>How Stuff Works: <a rel="nofollow" class="external text" href="http://auto.howstuffworks.com/cruise-control.htm">cruise control</a></li>
+<li>Wikipedia: <a href="https://en.wikipedia.org/wiki/Cruise_control" class="extiw" title="wikipedia:Cruise control">cruise control</a></li></ul>
+<!-- 
+NewPP limit report
+Cached time: 20250629074112
+Cache expiry: 86400
+Dynamic content: false
+Complications: []
+[SMW] In‐text annotation parser time: 0 seconds
+CPU time usage: 0.609 seconds
+Real time usage: 1.114 seconds
+Preprocessor visited node count: 914/1000000
+Post‐expand include size: 3402/2097152 bytes
+Template argument size: 616/2097152 bytes
+Highest expansion depth: 4/40
+Expensive parser function count: 0/100
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 4104/5000000 bytes
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   48.608      1 -total
+ 38.94%   18.929      1 Template:Chapter_link
+  7.81%    3.798     20 Template:Code_block
+  6.26%    3.044      1 Template:Righttoc
+  3.90%    1.897     20 Template:Code_start
+  2.85%    1.384     20 Template:Code_end
+-->
+
+<!-- Saved in parser cache with key fbs_wiki:pcache:idhash:19-0!dateformat=default!math=5 and timestamp 20250629074111 and revision id 1330
+ -->
+</div></div><div class="printfooter">Retrieved from "<a dir="ltr" href="http://fbswiki.org/wiki/index.php?title=Cruise_control&amp;oldid=1330">http://fbswiki.org/wiki/index.php?title=Cruise_control&amp;oldid=1330</a>"</div>
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="Special_Categories.html" title="Special:Categories">Category</a>: <ul><li><a href="Category_Running_examples.html" title="Category:Running examples">Running examples</a></li></ul></div></div>
+	</div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-personal" class="vector-menu" aria-labelledby="p-personal-label" role="navigation" 
+	 >
+	<h3 id="p-personal-label">
+		<span>Personal tools</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="vector-menu-content-list"><li id="pt-login"><a href="https://fbswiki.org/wiki/index.php?title=Special:UserLogin&amp;returnto=Cruise+control" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li></ul>
+		
+	</div>
+</nav>
+
+
+		<div id="left-navigation">
+			<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-namespaces" class="vector-menu vector-menu-tabs vectorTabs" aria-labelledby="p-namespaces-label" role="navigation" 
+	 >
+	<h3 id="p-namespaces-label">
+		<span>Namespaces</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="vector-menu-content-list"><li id="ca-nstab-main" class="selected"><a href="Cruise_control.html" title="View the content page [c]" accesskey="c">Page</a></li><li id="ca-talk" class="new"><a href="https://fbswiki.org/wiki/index.php?title=Talk:Cruise_control&amp;action=edit&amp;redlink=1" rel="discussion" title="Discussion about the content page (page does not exist) [t]" accesskey="t">Discussion</a></li></ul>
+		
+	</div>
+</nav>
+
+
+			<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-variants" class="vector-menu-empty emptyPortlet vector-menu vector-menu-dropdown vectorMenu" aria-labelledby="p-variants-label" role="navigation" 
+	 >
+	<input type="checkbox" class="vector-menu-checkbox vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+	<h3 id="p-variants-label">
+		<span>Variants</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="menu vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+
+		</div>
+		<div id="right-navigation">
+			<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-views" class="vector-menu vector-menu-tabs vectorTabs" aria-labelledby="p-views-label" role="navigation" 
+	 >
+	<h3 id="p-views-label">
+		<span>Views</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="vector-menu-content-list"><li id="ca-view" class="collapsible selected"><a href="Cruise_control.html">Read</a></li><li id="ca-viewsource" class="collapsible"><a href="https://fbswiki.org/wiki/index.php?title=Cruise_control&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li><li id="ca-history" class="collapsible"><a href="https://fbswiki.org/wiki/index.php?title=Cruise_control&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></li></ul>
+		
+	</div>
+</nav>
+
+
+			<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-cactions" class="vector-menu-empty emptyPortlet vector-menu vector-menu-dropdown vectorMenu" aria-labelledby="p-cactions-label" role="navigation" 
+	 >
+	<input type="checkbox" class="vector-menu-checkbox vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+	<h3 id="p-cactions-label">
+		<span>More</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="menu vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+
+			<div id="p-search" role="search">
+	<h3 >
+		<label for="searchInput">Search</label>
+	</h3>
+	<form action="https://fbswiki.org/wiki/index.php" id="searchform">
+		<div id="simpleSearch">
+			<input type="search" name="search" placeholder="Search FBSwiki" title="Search FBSwiki [f]" accesskey="f" id="searchInput"/>
+			<input type="hidden" name="title" value="Special:Search">
+			<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/>
+			<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>
+		</div>
+	</form>
+</div>
+
+		</div>
+	</div>
+	
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a  title="Visit the main page" class="mw-wiki-logo" href="Main_Page.html"></a>
+	</div>
+	<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-Contents" class="vector-menu vector-menu-portal portal portal-first" aria-labelledby="p-Contents-label" role="navigation" 
+	 >
+	<h3 id="p-Contents-label">
+		<span>Contents</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="vector-menu-content-list"><li id="n-Contents"><a href="Feedback_Systems__An_Introduction_for_Scientists_and_Engineers.html">Contents</a></li><li id="n-Lectures"><a href="Lectures.html">Lectures</a></li><li id="n-Software"><a href="Software.html">Software</a></li><li id="n-Errata"><a href="Errata.html">Errata</a></li><li id="n-FAQ"><a href="FAQ.html">FAQ</a></li><li id="n-Instructor-Info"><a href="Instructor_information.html">Instructor Info</a></li></ul>
+		
+	</div>
+</nav>
+
+
+	<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-Supplements" class="vector-menu vector-menu-portal portal" aria-labelledby="p-Supplements-label" role="navigation" 
+	 >
+	<h3 id="p-Supplements-label">
+		<span>Supplements</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="vector-menu-content-list"><li id="n-Biomlecular-Feedback-Systems"><a href="Biomolecular_Feedback_Systems.html">Biomlecular Feedback Systems</a></li><li id="n-Linear-Systems-Theory"><a href="Supplement__Linear_Systems_Theory.html">Linear Systems Theory</a></li><li id="n-Optimization-Based-Control"><a href="Supplement__Optimization-Based_Control.html">Optimization-Based Control</a></li><li id="n-Networked-Control-Systems"><a href="Supplement__Networked_Control_Systems.html">Networked Control Systems</a></li></ul>
+		
+	</div>
+</nav>
+
+<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-tb" class="vector-menu vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation" 
+	 >
+	<h3 id="p-tb-label">
+		<span>Tools</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="vector-menu-content-list"><li id="t-whatlinkshere"><a href="Special_WhatLinksHere/Cruise_control.html" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="Special_RecentChangesLinked/Cruise_control.html" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-specialpages"><a href="Special_SpecialPages.html" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="https://fbswiki.org/wiki/index.php?title=Cruise_control&amp;oldid=1330" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="https://fbswiki.org/wiki/index.php?title=Cruise_control&amp;action=info" title="More information about this page">Page information</a></li><li id="t-smwbrowselink"><a href="Special_Browse/_Cruise-5Fcontrol.html" rel="search">Browse properties</a></li></ul>
+		
+	</div>
+</nav>
+
+
+	
+</div>
+
+</div>
+
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info" >
+		<li id="footer-info-lastmod"> This page was last edited on 24 November 2024, at 16:39.</li>
+		<li id="footer-info-copyright">Content is available under <a class="external" rel="nofollow" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike</a> unless otherwise noted.</li>
+	</ul>
+	<ul id="footer-places" >
+		<li id="footer-places-privacy"><a href="FBSwiki_Privacy_policy.html" title="FBSwiki:Privacy policy">Privacy policy</a></li>
+		<li id="footer-places-about"><a href="FBSwiki_About.html" title="FBSwiki:About">About FBSwiki</a></li>
+		<li id="footer-places-disclaimer"><a href="FBSwiki_General_disclaimer.html" title="FBSwiki:General disclaimer">Disclaimers</a></li>
+	</ul>
+	<ul id="footer-icons" class="noprint">
+		<li id="footer-copyrightico"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://fbswiki.org/wiki/resources/assets/licenses/cc-by-nc-sa.png" alt="Creative Commons Attribution-NonCommercial-ShareAlike" width="88" height="31" loading="lazy"/></a></li>
+		<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="https://fbswiki.org/wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a><a href="https://www.semantic-mediawiki.org/wiki/Semantic_MediaWiki"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAAAfCAMAAABUFvrSAAACJVBMVEXe3t62trbLy8vGxsbAwMDX19e6urqsrKxHcEzQ0NC2tratra2oqKixsbHd3eDFxcXe3t7U1NTa2trX19fQ0NDV1dWNjY2dnZ2UlJSUlJTS0tKUlJSWlpbR0dGenp79/f38/Pz+/v7t7e3v7+/u7u7s7Oz19fX29vb6+vr7+/vz8/Pz8/P4+fnw8PD39/gWTq/09PX6+vktX7b/sg8XT7F6mc/f5OwhVrNvkMthhsfT2+j7rQ/M1eZqjcmFotPs7e9Cb722xuFResK/zOObstnu7/Grvd3M1+mNqNY6aLoaUbEaUbZWfsTk6fE2Zrnp7O8bTq0kWLQuYcpcg8Xh5/Byk83a4eukud1/nM+6yeQkWcGwwuDxnRQyYrigttvI0+gpW7XGyttLdsBni8geVLo0Z9XlkCPb4u+QqtcfVLLo7PNHcr73phFGX6HsmBnpkxg6bNwnXcbX3er19vnr7/SVrdhuhLl+j70vVqY6Xqv0oxJVcbQhV76DjKTz9ffQ2evE0OZAbbzu7/PS1uFufrDnrGgpSZjy8/SQnMFddrKuekXSiCsgTKRaaZHejy9yang3VptNaqspWbnmliy3j2/m6OzT3e7x8fL4+v3p6uwaN2re0cifqLiLiZWYhYGYb0xXYn+5g0xwiMKYpc2BcHZmW2srRXpGWIhecKfilz4+WID2+PyosMywqbGqss1aVnLZq33p1sGklZqrp7dkfr7CpY9yg59Ud6QZAAAAH3RSTlPfBN/f39/f2wDf39vV3/7N2rrEz5D5c8ONuHaPuXXDImoxqwAABO1JREFUSMe1kQdz01gQgBXaBS4w9OtHwMFSdPKTUNxkW+61xN2Je4tLHJNOGukkAUINJTzaUIbO9fr7TpLtS44DZiC5b6Sn3dW+TysJaWz4cv9eZFPZu/+bhkakYR88WqP59u3vjxzdDCT7GpCD4qNH3sEGzOhB5MCR/4PmA8j25uZ33t0A23lxff5hZTIzOrz2Ph8qK936l7i1tT7hk8DAoHNsbeLWKjPdQcZ+qvX9tHMNXca1XBDXHtL6x2Bh0HWtuXUo8oTgC1gVpcdsdpew92PUYtjwzFq+E9mJYfXxx1x5l2/l5Vhy0DW6TuyQCZcR2hnswXJM0h+203471u5WKMIE5mDpspIIO8sZTMZiIbczY6+JCaI+/sJZ38qjP28+nQjkx/mcqGJ26rW3iKg/fYphCL1jNk5WbqXI0nBnu00RJ2j9bNRp6MmFS0SYIXLuUlQ5w22qizHr5MTyy2u/3XxVvHHlwtWVa/xTCQIIlEaMzrgswzA5P9BrAciYASqNoiNdjL8b0GYAHN3AGAEgzPSQc9UtYCeyBQAMO2G9PhhzXfp9qdifSCT6Lj788QQnrvWEuNPI2um0LW0D+m4A6E4AnIZOeq7ksQuJvi6eUXRW+8EWXsxNPhkYGJiSXr7Rd1qtVp9MXHkgIurzAkdFxjrj7cmKbN4K5v8RGxT2sJMTpwBflNHhUJgBdoUylzy3TuwIDBRi0hf9p9VtbW3qk30X7q2Je1IybZq7mLVWFKTSADXPoqi9AzVorda0kKTS6KkRbSgaR1GT1h5CObYiW1GU27yc5z6F9Fn/yTYedeLi9AIA6AbgxGIxAMPZcZeUHH9cFavVfY97FaNA/DbazRZVV89/61at2BTlg1JXiFtrYoBmRyd7p6/UP0XxaSDmy4pt0jmuh8qx6wQ2MmRz18TaJCUWO9xisUVhMMsoZZDiGHLLuXUbso2iatP/1HvhYu3n3bh6Pe/LUjZSj1NUJ8lSlNwahRRlMRjmyFDICikVn8+SacomdbZTVj+0mQSxweS1WqpiHK/Ncubs858f9idOJ/qKS1cv+RbFuIbMmHEvTbO4QeF25CxyD62nSbmJ1MUzRrpiwR0RPBJMpnCGxWVGXBn8TkarNGQHjuPrxOeWY4GY9FmxWHy19Gvv+ayYF6f8oYi7i8U93bjFkYokvbhWEFu8Og2ZxrUe3NMpc3vLhqqYpVV4XbwDQkpgoVwYKOR9N5d+eXB5vJevQA0pD7oVqi4WOj16vX6EYSA08WKvyeOZJw1cQ6rsnXOa/RYoM0Kls0zLuVoHhHAHL8YFXkwVCoE8uXhvMVCY8mW5Ci8eKkcgJ9azOl0UajNDFiUpj5JeloEqTgwd/iCUJP0sFMSejkpO96b4zl1fPuYiyd6Vs4GBmHSsJoYmLy/WeBTlis5rlJYrgjhe1s+XOXGEtHJOMl4VB2EHLauKdyG7JBLIc//uslRKkhOrcGJqyiU9z5UkOpVOwiGXSyQizRAfqlRc7Y5KJFnV6FReiWSV7xAWeQd/SOSq6qY18eVHq4vjlyazEJ73ScmJPVxJVKdF9MFwYpFIEL+ehvDOcSH8YXRsAa4XfwS7kd0tLfw7Sp7fl7xJywbYjTTVotfTb+849lEcb0K+2lMN/5o+tons+Rxp+PrQ8U3n0BcNSGPj4W+bPuX5ZLNo+uxwY+PfoLJHX1KXgyMAAAAASUVORK5CYII=" alt="Powered by Semantic MediaWiki" class="smw-footer" width="88" height="31" loading="lazy"/></a></li>
+	</ul>
+	<div style="clear: both;"></div>
+</footer>
+
+
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"smw":{"limitreport-intext-parsertime":0},"limitreport":{"cputime":"0.609","walltime":"1.114","ppvisitednodes":{"value":914,"limit":1000000},"postexpandincludesize":{"value":3402,"limit":2097152},"templateargumentsize":{"value":616,"limit":2097152},"expansiondepth":{"value":4,"limit":40},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":4104,"limit":5000000},"timingprofile":["100.00%   48.608      1 -total"," 38.94%   18.929      1 Template:Chapter_link","  7.81%    3.798     20 Template:Code_block","  6.26%    3.044      1 Template:Righttoc","  3.90%    1.897     20 Template:Code_start","  2.85%    1.384     20 Template:Code_end"]},"cachereport":{"timestamp":"20250629074112","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":88});});</script></body>
+<!-- Mirrored from fbswiki.org/wiki/index.php/Cruise.py by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Jun 2025 21:43:01 GMT -->
+</html>

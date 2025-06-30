@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+
+<!-- Mirrored from fbswiki.org/wiki/index.php/Special:Browse/:16-5FNov-5F2024:-5FPython-5Ffigure-5Fsources-5Fupdated-5Ffor-5Fpython-2Dcontrol-5Fv0.10.1 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Jun 2025 21:20:55 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8"/>
+<title>16 Nov 2024: Python figure sources updated for python-control v0.10.1</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"fa00e50be01018b5df7ee97a","wgCSPNonce":!1,"wgCanonicalNamespace":"Special","wgCanonicalSpecialPageName":"Browse","wgNamespaceNumber":-1,"wgPageName":"Special:Browse/:16-5FNov-5F2024:-5FPython-5Ffigure-5Fsources-5Fupdated-5Ffor-5Fpython-2Dcontrol-5Fv0.10.1","wgTitle":"Browse/:16-5FNov-5F2024:-5FPython-5Ffigure-5Fsources-5Fupdated-5Ffor-5Fpython-2Dcontrol-5Fv0.10.1","wgCurRevisionId":0,"wgRevisionId":0,"wgArticleId":0,"wgIsArticle":!1,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":
+"Special:Browse/:16-5FNov-5F2024:-5FPython-5Ffigure-5Fsources-5Fupdated-5Ffor-5Fpython-2Dcontrol-5Fv0.10.1","wgRelevantArticleId":0,"wgIsProbablyEditable":!1,"wgRelevantPageIsProbablyEditable":!1,"wgPageFormsTargetName":null,"wgPageFormsAutocompleteValues":[],"wgPageFormsAutocompleteOnAllChars":!1,"wgPageFormsFieldProperties":[],"wgPageFormsCargoFields":[],"wgPageFormsDependentFields":[],"wgPageFormsCalendarValues":[],"wgPageFormsCalendarParams":[],"wgPageFormsCalendarHTML":null,"wgPageFormsGridValues":[],"wgPageFormsGridParams":[],"wgPageFormsContLangYes":null,"wgPageFormsContLangNo":null,"wgPageFormsContLangMonths":[],"wgPageFormsHeightForMinimizingInstances":800,"wgPageFormsShowOnSelect":[],"wgPageFormsScriptPath":"/wiki/extensions/PageForms","edgValues":null,"wgPageFormsEDSettings":null,"wgAmericanDates":!1};RLSTATE={"site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"loading","mediawiki.ui":"ready","mediawiki.ui.button":"ready"
+,"mediawiki.ui.input":"ready","ext.smw.browse.styles":"ready","mediawiki.helplink":"ready","skins.vector.styles.legacy":"ready","ext.smw.style":"ready","ext.smw.tooltip.styles":"ready","ext.smw.special.styles":"ready"};RLPAGEMODULES=["ext.smw.browse","ext.smw.tooltips","site","mediawiki.page.startup","mediawiki.page.ready","skins.vector.legacy.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="https://fbswiki.org/wiki/load.php?lang=en&amp;modules=ext.smw.browse.styles%7Cext.smw.special.styles%7Cext.smw.style%7Cext.smw.tooltip.styles&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="https://fbswiki.org/wiki/load.php?lang=en&amp;modules=mediawiki.helplink%2Cui%7Cmediawiki.ui.button%2Cinput%7Cskins.vector.styles.legacy&amp;only=styles&amp;skin=vector"/>
+<script async="" src="https://fbswiki.org/wiki/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="generator" content="MediaWiki 1.35.1"/>
+<meta name="robots" content="noindex,nofollow"/>
+<link rel="shortcut icon" href="https://fbswiki.org/favicon.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://fbswiki.org/wiki/opensearch_desc.php" title="FBSwiki (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="http://fbswiki.org/wiki/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+<link rel="alternate" type="application/atom+xml" title="FBSwiki Atom feed" href="https://fbswiki.org/wiki/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<!--[if lt IE 9]><script src="/wiki/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns--1 ns-special mw-special-Browse page-Special_Browse_16-5FNov-5F2024_-5FPython-5Ffigure-5Fsources-5Fupdated-5Ffor-5Fpython-2Dcontrol-5Fv0_10_1 rootpage-Special_Browse_16-5FNov-5F2024_-5FPython-5Ffigure-5Fsources-5Fupdated-5Ffor-5Fpython-2Dcontrol-5Fv0_10_1 skin-vector action-view skin-vector-legacy">
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice" class="mw-body-content"></div>
+	<div class="mw-indicators mw-body-content">
+	<div id="mw-indicator-browse" class="mw-indicator"><div class="smw-page-indicator-rdflink"><a href="https://fbswiki.org/wiki/index.php?title=Special:ExportRDF/16_Nov_2024:_Python_figure_sources_updated_for_python-control_v0.10.1&amp;syntax=rdf">RDF</a></div></div>
+	<div id="mw-indicator-mw-helplink" class="mw-indicator"><a href="https://www.semantic-mediawiki.org/wiki/Help:Special:Browse" target="_blank" class="mw-helplink">Help</a></div>
+	</div>
+	<h1 id="firstHeading" class="firstHeading" lang="en">Browse wiki</h1>
+	<div id="bodyContent" class="mw-body-content">
+		
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div id="mw-content-text"><div class="smwb-container" data-subject="{&quot;dbkey&quot;:&quot;16_Nov_2024:_Python_figure_sources_updated_for_python-control_v0.10.1&quot;,&quot;ns&quot;:0,&quot;iw&quot;:&quot;&quot;,&quot;subobject&quot;:&quot;&quot;}" data-options="{&quot;dir&quot;:null,&quot;lang&quot;:&quot;en&quot;,&quot;group&quot;:null,&quot;printable&quot;:null,&quot;offset&quot;:null,&quot;including&quot;:false,&quot;showInverse&quot;:false,&quot;showAll&quot;:true,&quot;showGroup&quot;:true,&quot;showSort&quot;:false,&quot;api&quot;:true,&quot;valuelistlimit.out&quot;:&quot;30&quot;,&quot;valuelistlimit.in&quot;:&quot;20&quot;}"><div class="smwb-status"><noscript><div class="smw-callout smw-callout-error">This page or action requires Javascript to work, please enable Javascript in your browser or use a browser where this is supported so that functionality can be served and is provided as requested. For further assistance, please have a look at the <a rel="nofollow" class="external text" href="https://www.semantic-mediawiki.org/wiki/Help:Noscript">noscript</a> help page.</div></noscript></div><div class="smwb-emptysheet is-disabled"><span class="smw-overlay-spinner large inline"></span><div class="smwb-content"><div class="smw-table smwb-factbox"><div class="smw-table-row smwb-title"><a href="https://fbswiki.org/wiki/index.php/16_Nov_2024:_Python_figure_sources_updated_for_python-control_v0.10.1" title="16 Nov 2024: Python figure sources updated for python-control v0.10.1">16 Nov 2024: Python figure sources updated for python-control v0.10.1</a></div></div><div class="smw-table smwb-factbox"><div class="smw-table-row smwb-actions"><a href="https://fbswiki.org/wiki/index.php?title=Special:Browse&amp;offset=0&amp;dir=both&amp;article=16+Nov+2024%3A+Python+figure+sources+updated+for+python-control+v0.10.1&amp;group=hide" class="smw-browse-hide-group">Hide groups</a><span class="smwb-action-separator">&nbsp;</span><a href="https://fbswiki.org/wiki/index.php?title=Special:Browse&amp;offset=0&amp;dir=out&amp;article=16+Nov+2024%3A+Python+figure+sources+updated+for+python-control+v0.10.1" class="smw_browse_hide_incoming">Hide incoming properties</a>&#160;
+</div></div><div class="smw-table smwb-factbox smwb-bottom"><div class="smw-table-row smwb-propvalue"><div class="smw-table-cell smwb-cell smwb-prophead"></div><div class="smw-table-cell smwb-cell smwb-propval">Information is currently being retrieved from the backend.</div></div></div><div class="smw-table smwb-factbox"><div class="smw-table-row smwb-center">&#160;</div></div></div><div class="smwb-form"><div style="margin-top:15px;"></div><form name="smwbrowse" action="https://fbswiki.org/wiki/index.php/Special:Browse" method="get"><input type="hidden" name="title" value="Special:Browse"/><div class="smwb-input"><div class="input-field"><input dir="ltr" name="article" size="40" id="smw-page-input" class="input smw-page-input autocomplete-arrow mw-ui-input" value="16 Nov 2024: Python figure sources updated for python-control v0.10.1"/></div><div class="button-field"><input type="submit" class="input-button mw-ui-button" value="Go"/></div></div></form></div></div></div></div><div class="printfooter">Retrieved from "<a dir="ltr" href="http://fbswiki.org/wiki/index.php/Special:Browse/:16-5FNov-5F2024:-5FPython-5Ffigure-5Fsources-5Fupdated-5Ffor-5Fpython-2Dcontrol-5Fv0.10.1">http://fbswiki.org/wiki/index.php/Special:Browse/:16-5FNov-5F2024:-5FPython-5Ffigure-5Fsources-5Fupdated-5Ffor-5Fpython-2Dcontrol-5Fv0.10.1</a>"</div>
+		<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
+	</div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-personal" class="vector-menu" aria-labelledby="p-personal-label" role="navigation" 
+	 >
+	<h3 id="p-personal-label">
+		<span>Personal tools</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="vector-menu-content-list"><li id="pt-login"><a href="https://fbswiki.org/wiki/index.php?title=Special:UserLogin&amp;returnto=Special%3ABrowse%2F%3A16-5FNov-5F2024%3A-5FPython-5Ffigure-5Fsources-5Fupdated-5Ffor-5Fpython-2Dcontrol-5Fv0.10.1" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li></ul>
+		
+	</div>
+</nav>
+
+
+		<div id="left-navigation">
+			<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-namespaces" class="vector-menu vector-menu-tabs vectorTabs" aria-labelledby="p-namespaces-label" role="navigation" 
+	 >
+	<h3 id="p-namespaces-label">
+		<span>Namespaces</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="vector-menu-content-list"><li id="ca-nstab-special" class="selected"><a href="https://fbswiki.org/wiki/index.php/Special:Browse/:16-5FNov-5F2024:-5FPython-5Ffigure-5Fsources-5Fupdated-5Ffor-5Fpython-2Dcontrol-5Fv0.10.1" title="This is a special page, and it cannot be edited">Special page</a></li></ul>
+		
+	</div>
+</nav>
+
+
+			<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-variants" class="vector-menu-empty emptyPortlet vector-menu vector-menu-dropdown vectorMenu" aria-labelledby="p-variants-label" role="navigation" 
+	 >
+	<input type="checkbox" class="vector-menu-checkbox vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+	<h3 id="p-variants-label">
+		<span>Variants</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="menu vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+
+		</div>
+		<div id="right-navigation">
+			<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-views" class="vector-menu-empty emptyPortlet vector-menu vector-menu-tabs vectorTabs" aria-labelledby="p-views-label" role="navigation" 
+	 >
+	<h3 id="p-views-label">
+		<span>Views</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+
+			<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-cactions" class="vector-menu-empty emptyPortlet vector-menu vector-menu-dropdown vectorMenu" aria-labelledby="p-cactions-label" role="navigation" 
+	 >
+	<input type="checkbox" class="vector-menu-checkbox vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+	<h3 id="p-cactions-label">
+		<span>More</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="menu vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+
+			<div id="p-search" role="search">
+	<h3 >
+		<label for="searchInput">Search</label>
+	</h3>
+	<form action="https://fbswiki.org/wiki/index.php" id="searchform">
+		<div id="simpleSearch">
+			<input type="search" name="search" placeholder="Search FBSwiki" title="Search FBSwiki [f]" accesskey="f" id="searchInput"/>
+			<input type="hidden" name="title" value="Special:Search">
+			<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/>
+			<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>
+		</div>
+	</form>
+</div>
+
+		</div>
+	</div>
+	
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a  title="Visit the main page" class="mw-wiki-logo" href="https://fbswiki.org/wiki/index.php/Main_Page"></a>
+	</div>
+	<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-Contents" class="vector-menu vector-menu-portal portal portal-first" aria-labelledby="p-Contents-label" role="navigation" 
+	 >
+	<h3 id="p-Contents-label">
+		<span>Contents</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="vector-menu-content-list"><li id="n-Contents"><a href="https://fbswiki.org/wiki/index.php/Feedback_Systems:_An_Introduction_for_Scientists_and_Engineers">Contents</a></li><li id="n-Lectures"><a href="https://fbswiki.org/wiki/index.php/Lectures">Lectures</a></li><li id="n-Software"><a href="https://fbswiki.org/wiki/index.php/Software">Software</a></li><li id="n-Errata"><a href="https://fbswiki.org/wiki/index.php/Errata">Errata</a></li><li id="n-FAQ"><a href="https://fbswiki.org/wiki/index.php/FAQ">FAQ</a></li><li id="n-Instructor-Info"><a href="https://fbswiki.org/wiki/index.php/Instructor_information">Instructor Info</a></li></ul>
+		
+	</div>
+</nav>
+
+
+	<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-Supplements" class="vector-menu vector-menu-portal portal" aria-labelledby="p-Supplements-label" role="navigation" 
+	 >
+	<h3 id="p-Supplements-label">
+		<span>Supplements</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="vector-menu-content-list"><li id="n-Biomlecular-Feedback-Systems"><a href="https://fbswiki.org/wiki/index.php/Biomolecular_Feedback_Systems">Biomlecular Feedback Systems</a></li><li id="n-Linear-Systems-Theory"><a href="https://fbswiki.org/wiki/index.php/Supplement:_Linear_Systems_Theory">Linear Systems Theory</a></li><li id="n-Optimization-Based-Control"><a href="https://fbswiki.org/wiki/index.php/Supplement:_Optimization-Based_Control">Optimization-Based Control</a></li><li id="n-Networked-Control-Systems"><a href="https://fbswiki.org/wiki/index.php/Supplement:_Networked_Control_Systems">Networked Control Systems</a></li></ul>
+		
+	</div>
+</nav>
+
+<!-- Please do not use role attribute as CSS selector, it is deprecated. -->
+<nav id="p-tb" class="vector-menu vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation" 
+	 >
+	<h3 id="p-tb-label">
+		<span>Tools</span>
+	</h3>
+	<!-- Please do not use the .body class, it is deprecated. -->
+	<div class="body vector-menu-content">
+		<!-- Please do not use the .menu class, it is deprecated. -->
+		<ul class="vector-menu-content-list"><li id="t-specialpages"><a href="https://fbswiki.org/wiki/index.php/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li></ul>
+		
+	</div>
+</nav>
+
+
+	
+</div>
+
+</div>
+
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-places" >
+		<li id="footer-places-privacy"><a href="https://fbswiki.org/wiki/index.php/FBSwiki:Privacy_policy" title="FBSwiki:Privacy policy">Privacy policy</a></li>
+		<li id="footer-places-about"><a href="https://fbswiki.org/wiki/index.php/FBSwiki:About" title="FBSwiki:About">About FBSwiki</a></li>
+		<li id="footer-places-disclaimer"><a href="https://fbswiki.org/wiki/index.php/FBSwiki:General_disclaimer" title="FBSwiki:General disclaimer">Disclaimers</a></li>
+	</ul>
+	<ul id="footer-icons" class="noprint">
+		<li id="footer-copyrightico"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://fbswiki.org/wiki/resources/assets/licenses/cc-by-nc-sa.png" alt="Creative Commons Attribution-NonCommercial-ShareAlike" width="88" height="31" loading="lazy"/></a></li>
+		<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="https://fbswiki.org/wiki/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/wiki/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /wiki/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a><a href="https://www.semantic-mediawiki.org/wiki/Semantic_MediaWiki"><img src="data:image/png;base64,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" alt="Powered by Semantic MediaWiki" class="smw-footer" width="88" height="31" loading="lazy"/></a></li>
+	</ul>
+	<div style="clear: both;"></div>
+</footer>
+
+
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.log.warn("This page is using the deprecated ResourceLoader module \"mediawiki.ui\".\nPlease use OOUI instead.");mw.config.set({"wgBackendResponseTime":112});});</script></body>
+<!-- Mirrored from fbswiki.org/wiki/index.php/Special:Browse/:16-5FNov-5F2024:-5FPython-5Ffigure-5Fsources-5Fupdated-5Ffor-5Fpython-2Dcontrol-5Fv0.10.1 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Jun 2025 21:20:55 GMT -->
+</html>
