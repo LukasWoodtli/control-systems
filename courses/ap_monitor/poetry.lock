@@ -729,6 +729,21 @@ files = [
 diagrams = ["jinja2", "railroad-diagrams"]
 
 [[package]]
+name = "pyserial"
+version = "3.5"
+description = "Python Serial Port Extension"
+optional = false
+python-versions = "*"
+groups = ["main"]
+files = [
+    {file = "pyserial-3.5-py2.py3-none-any.whl", hash = "sha256:c4451db6ba391ca6ca299fb3ec7bae67a5c55dde170964c7a14ceefec02f2cf0"},
+    {file = "pyserial-3.5.tar.gz", hash = "sha256:3c77e014170dfffbd816e6ffc205e9842efb10be9f58ec16d3e8675b4925cddb"},
+]
+
+[package.extras]
+cp2110 = ["hidapi"]
+
+[[package]]
 name = "python-dateutil"
 version = "2.9.0.post0"
 description = "Extensions to the standard Python datetime module"
@@ -859,6 +874,25 @@ mpmath = ">=1.1.0,<1.4"
 dev = ["hypothesis (>=6.70.0)", "pytest (>=7.1.0)"]
 
 [[package]]
+name = "tclab"
+version = "1.0.0"
+description = "Python bindings for the BYU Arduino Temperature Control Lab"
+optional = false
+python-versions = "*"
+groups = ["main"]
+files = [
+    {file = "tclab-1.0.0-py2.py3-none-any.whl", hash = "sha256:40fa767e1ebfe49d8124f83774d0af1b3928cd3c753d8d9ae04e19118e202b82"},
+    {file = "tclab-1.0.0.tar.gz", hash = "sha256:714cc0f7a18e6915922242daa76626148613107ef3c344c301b67e8a69cee63b"},
+]
+
+[package.dependencies]
+pyserial = "*"
+
+[package.extras]
+dev = ["check-manifest"]
+test = ["coverage", "pytest"]
+
+[[package]]
 name = "tzdata"
 version = "2025.2"
 description = "Provider of IANA time zone data"
@@ -873,4 +907,4 @@ files = [
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.13"
-content-hash = "b401dd6b2915dc695ebf477646aa8f9de25db5ae0e36c0d4909f584558ad8849"
+content-hash = "532dd60a74787487df216cd472c6208727ab572362d8acc534e43d657c1cdf0b"
