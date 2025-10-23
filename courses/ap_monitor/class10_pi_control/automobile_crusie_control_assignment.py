@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 from scipy.integrate import odeint
 
 # animate plots?
-animate=True # True / False
+animate=False # True / False
 
 # define model
 def vehicle(v,t,u,load):
@@ -30,7 +30,7 @@ delta_t = tf/(nsteps-1)   # how long is each time step?
 ts = np.linspace(0,tf,nsteps) # linearly spaced time vector
 
 # simulate step test operation
-step = np.zeros(nsteps) # u = valve % open
+step = np.zeros(nsteps) # u = valve % open (gas pedal position)
 step[11:] = 50.0       # step up pedal position
 # passenger(s) + cargo load
 load = 200.0 # kg
@@ -39,17 +39,21 @@ v0 = 0.0
 # set point
 sp = 25.0
 # for storing the results
-vs = np.zeros(nsteps)
+vs = np.zeros(nsteps)  # velocity of car
 sps = np.zeros(nsteps)
 
 
 ubias = 0.
+# slower, less overshoot
+#Kc = 1./1.2
+#tauI = 20.
+# faster, more overshoot
 Kc = 3.
 tauI = 30.
 sum_int = 0.
-es = np.zeros(nsteps)
-ies = np.zeros(nsteps)
-sp_store = np.zeros(nsteps)
+es = np.zeros(nsteps)  # error (SP-PV)
+ies = np.zeros(nsteps)  # integral of error
+sp_store = np.zeros(nsteps)  # store set point
 
 plt.figure(1,figsize=(5,4))
 if animate:
@@ -72,6 +76,7 @@ for i in range(nsteps-1):
 
     sp_store[i+1] = sp
     error = sp - v0
+    es[i+1] = error
     sum_int = sum_int + error * delta_t
     # controller algorithm
     u = ubias + Kc * error + Kc/tauI * sum_int
@@ -111,15 +116,23 @@ for i in range(nsteps-1):
 
 if not animate:
     # plot results
-    plt.subplot(2,1,1)
-    plt.plot(ts,vs,'b-',linewidth=3)
-    plt.plot(ts,sps,'k--',linewidth=2)
+    plt.figure()
+    plt.subplot(2, 2, 1)
+    plt.plot(ts, vs, 'b-', linewidth=3)
+    plt.plot(ts, sp_store, 'k--', linewidth = 2)
     plt.ylabel('Velocity (m/s)')
-    plt.legend(['Velocity','Set Point'],loc=2)
-    plt.subplot(2,1,2)
-    plt.plot(ts,step,'r--',linewidth=3)
-    plt.ylabel('Gas Pedal')    
-    plt.legend(['Gas Pedal (%)'])
+    plt.legend(['Velocity', 'Set Point'], loc='best')
+    plt.subplot(2, 2, 2)
+    plt.plot(ts, step, 'r--', linewidth=3)
+    plt.ylabel('Gas Pedal')
+    plt.legend(['Gas Pedal (%) '], loc='best')
+    plt.subplot(2, 2, 3)
+    plt.plot(ts, es, 'b-', linewidth=3)
+    plt.legend(['Error (SP-PV)'])
+    plt.xlabel('Time (sec)')
+    plt.subplot(2, 2, 4)
+    plt.plot(ts, ies, 'k--', linewidth=3)
+    plt.legend(['Integral of Error'])
     plt.xlabel('Time (sec)')
     plt.show()
 else:
